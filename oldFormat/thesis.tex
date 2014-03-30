@@ -1,0 +1,124 @@
+% ---------------------------------------------------------------------------------------
+% Thesis for Master of Applied Science, University of Waterloo, Canada, 2005
+% Defended on April 25, 2006
+% ---------------------------------------------------------------------------------------
+
+
+% ---------------------------------------------------------------------------------------
+% PREAMBLE STUFF
+% ---------------------------------------------------------------------------------------
+% Instead of inserting usepackage and defined commands here, keep them in a separate file.
+\include{preamble/preamble}
+
+% ---------------------------------------------------------------------------------------
+% INCLUDE ONLY
+% ---------------------------------------------------------------------------------------
+% Use if want to include only certain parts of the document, example \includeonly{chapter1}
+% in order to speed up compile time when you're focussing on some particular part.
+%\includeonly{chapters/chapter5/chapter5}
+%\includeonly{appendices/appendix_a/appendix_a}
+
+
+% ---------------------------------------------------------------------------------------
+% DOCUMENT
+% ---------------------------------------------------------------------------------------
+\begin{document}
+
+% ---------------------------------------------------------------------------------------
+% TITLE PAGE
+% ---------------------------------------------------------------------------------------
+\title{
+\renewcommand{\baselinestretch}{3}
+\LARGE A Date-Driven Test Selection Framework}
+\author{Weining Liu}
+\discipline{Electrical and Computer Engineering}
+\degree{Master of Applied Science}
+\prepages           % start title page, etc. with roman numeral numbering
+\maketitle          % make title page
+
+% ---------------------------------------------------------------------------------------
+% SIGNATURE PAGES
+% ---------------------------------------------------------------------------------------
+\sigpages           % produce those ugly, stupid signature pages
+
+% ---------------------------------------------------------------------------------------
+% ABSTRACT
+% ---------------------------------------------------------------------------------------
+% \begin{abstract}
+% %\input{abstract/abstract}
+% \end{abstract}
+
+% ---------------------------------------------------------------------------------------
+% ACKNOWLEDGMENTS
+% ---------------------------------------------------------------------------------------
+\newpage
+\begin{center}
+{\bf \Large Acknowledgments}
+\end{center}
+%\input{acknowledgments/acknowledgments}
+
+% ---------------------------------------------------------------------------------------
+% DEDICATED TO:
+% ---------------------------------------------------------------------------------------
+%\newpage
+%\vspace*{30mm}
+%\begin{center}
+%{\bf \Large Dedicated To:}
+%\end{center}
+%\input{dedicated/dedicated}
+
+% ---------------------------------------------------------------------------------------
+% LIST OF PUBLICATIONS
+% ---------------------------------------------------------------------------------------
+%\newpage
+%\begin{center}
+%{\bf \Large List of Publications}
+%\end{center}
+%\input{publications/publications}
+
+% ---------------------------------------------------------------------------------------
+% TABLE OF CONTENTS, LIST OF FIGURES, LIST OF TABLES
+% ---------------------------------------------------------------------------------------
+\tableofcontents    % put table of contents here
+\listoftables       % put list of tables here
+\listoffigures      % put list of figures here
+
+% ---------------------------------------------------------------------------------------
+% MAIN BODY
+% ---------------------------------------------------------------------------------------
+\mainbody {         % use arabic page numbers and \pagestyle{headings}
+%\include{chapters/chapter1/chapter1}
+\include{chapters/chapter2/chapter2}
+% \include{chapters/chapter3/chapter3}
+\include{chapters/chapter4/chapter4}
+% \include{chapters/chapter5/chapter5}
+\include{chapters/chapter6/chapter6}
+% \include{chapters/chapter7/chapter7}
+\include{chapters/chapter8/chapter8}
+% 
+% \appendix
+% \include{appendices/appendix_a/appendix_a}
+% \include{appendices/appendix_b/appendix_b}
+}
+
+% ---------------------------------------------------------------------------------------
+% BIBLIOGRAPHY
+% ---------------------------------------------------------------------------------------
+% This GATHER command is useful for when you want to use WinEdt's Gather functionality,
+% i.e., type \cite{} and a popup box appears with all of your citations to choose from.
+% Leave the % on the next line.
+%GATHER{bib/mythesisbib.bib}
+\bibliography{bib/mythesisbib}
+% Include the following references in the list of references which are not explicitly cited
+% in the document.
+%\nocite{javacc, eclipsercp05}
+\nocite{*}  % include all references in the list of references
+% plain   normal style - listed in ABC order and labeled numerically
+% unsrt   same as plain except entries appear in order of citation
+% alpha   same as plain except entry labels are used
+% abbrv   same as plain except uses abbreviations for first names, month names, and journal
+%         names
+% latex8  ???
+\bibliographystyle{plain}
+
+\end{document}

@@ -1,0 +1,193 @@
+% UW Thesis Template for LaTeX 
+% Last Updated July 8, 2009 by Stephen Carr, IST Client Services
+% FOR ASSISTANCE, please send mail to rt-IST-CSmathsci@ist.uwaterloo.ca
+
+% Effective October 2006, the University of Waterloo 
+% requires electronic thesis submission. See the UW thesis regulations at
+% http://www.grad.uwaterloo.ca/Thesis_Regs/thesistofc.asp.
+% However, many faculties/departments also require one or more printed
+% copies. This template attempts to satisfy requirements for both types of output. 
+% It is based on the standard "report" document class. The "book" document 
+% class can be substituted if you have a very large, multi-part thesis.
+
+% DISCLAIMER
+% To the best of our knowledge, this template satisfies the current UW requirements.
+% However, it is your responsibility to assure that you have met all 
+% requirements of the University and your particular department.
+% Many thanks to Colin Alie for assistance in preparing this updated template.
+
+% -----------------------------------------------------------------------
+
+% By default, output is produced that is geared toward generating a PDF 
+% version optimized for viewing on an electronic display, including 
+% hyperlinks within the PDF.
+ 
+% E.g. to process a thesis called "mythesis.tex" based on this template, run:
+
+% pdflatex mythesis	-- first pass of the pdflatex processor
+% bibtex mythesis	-- generates bibliography from .bib data file(s) 
+% pdflatex mythesis	-- fixes cross-references, bibliographic references, etc
+% pdflatex mythesis	-- fixes cross-references, bibliographic references, etc
+
+% If you use the recommended LaTeX editor, Texmaker, you would open the mythesis.tex
+% file, then click the pdflatex button. Then run BibTeX (under the Tools menu).
+% Then click the pdflatex button two more times. If you have an index as well,
+% you'll need to run MakeIndex from the Tools menu as well, before running pdflatex
+% the last two times.
+
+% N.B. The "pdftex" program allows graphics in the following formats to be
+% included with the "\includegraphics" command: PNG, PDF, JPEG, TIFF
+% Tip 1: Generate your figures and photos in the size you want them to appear
+% in your thesis, rather than scaling them with \includegraphics options.
+% Tip 2: Any drawings you do should be in scalable vector graphic formats:
+% SVG, PNG, WMF, EPS and then converted to PNG or PDF, so they are scalable in
+% the final PDF as well.
+% Tip 3: Photographs should be cropped and compressed so as not to be too large.
+
+% To create a PDF output that is optimized for double-sided printing: 
+%
+% 1) comment-out the \documentclass statement in the preamble below, and
+% un-comment the second \documentclass line.
+%
+% 2) change the value assigned below to the boolean variable
+% "ElectronicVersion" from "true" to "false".
+
+% --------------------- Start of Document Preamble -----------------------
+
+% Specify the document class, default style attributes, and page dimensions
+% For hyperlinked PDF, suitable for viewing on a computer, use this:
+%----------------------------------------------------------------------
+% MAIN BODY
+%----------------------------------------------------------------------
+% Because this is a short document, and to reduce the number of files
+% needed for this template, the chapters are not separate
+% documents as suggested above, but you get the idea. If they were
+% separate documents, they would each start with the \chapter command, i.e, 
+% do not contain \documentclass or \begin{document} and \end{document} commands.
+%======================================================================
+\reversemarginpar
+\setlength{\marginparwidth}{2cm}
+\chapter{Modelling Goals}
+%======================================================================
+We use exiting goal modelling research to help us identify most apporapriate
+metrics for selecting test cases. Though Software Test Selection 
+\newpage
+%----------------------------------------------------------------------
+\section{Software Test Selection Goals}
+%----------------------------------------------------------------------
+
+\underline{why we talk about goals, different goals lead to differnt
+techniques}Software Test Selection may be
+performed for vaiours goals.Differences in underlying goals lead regresstion test selection
+techniques to distinctly different results in test selection\cite{DBLP:journals/tse/RothermelH96}. 
+
+Consider a conintuous integration development environment in which new or
+changed code are integrated into existing code frequenly and an automated build
+task is schedule nightly. In this case, test selection may be used to select a
+small subset of existing test suite to test newly introduced or change code
+only. Ideally , this selected subset is much smaller than the complete test
+suite. If the new or changed code is to implmenent a new requirement or to
+implment change to existing requirement, test selection may be used to select a
+subset to test new or changed requirements.If the new or changed code is to
+implmenent a fix of a defect, test selection may be used to select a subset to
+test the fix. 
+
+combination of multiple goals. conflict goals.
+
+
+
+
+\cite{non-functional requirements in software engineering}
+softgoal interdependency graphs
+
+unlike goals in traditional problem-solving and planning frameworks,
+non-functional requirmenents can rarely be said to be ``accomplished'' or
+``satisfied'' in a clear-cut sense. Instead, differnet design decisions
+contribute positively or negatively, and with variying degreees, towards
+attaining a particular non-functional requirement. Accordingly, we speak of the
+satisficing of a softgoals to suggest that generated software is expected to
+satisfy NFRs within acceptable limits, rather than absolutely.
+
+
+offspring can contribute fully or partially , and positiviely or negatively,
+towards the satisficing of the parent.
+
+
+
+
+
+\newpage
+A very important feature of our framework are the catalogues of test
+selection goals and test selection techniques based on research literautres to date. We
+created two kinds of catalogues in our test selection framework. First, we
+surveryed existing software test selection,prioritization and minimization papers and created a catalog of software test selection goals. Then, we
+systematically organie test selection techniques discuss in the literature.
+These techniques are intend to help meet selection goals. With these two
+catalogues, we created a SIG to capture the interdependecies
+between software test selection goals and relationships between selection goals
+and selection techniques. These two catalogues not only the first step for test engineers to pick the right selection techniques,
+but also are the fundmental knowledge base for test engineers to understand what
+other selection options are available out there. In this chapter, we will discuss in details how
+this SIG is created.
+
+%document how I come up with the graph. how the survey was done ans what
+% information is collection and compared sysmetically
+\subsection{Acquiring and cataloguing Software Test Selection goals}
+We followed the decomposing process in \cite{NFR} to decompose our top level
+goal. The initial top level softgoal is pretty broad,it needs to be broken down
+into smaller subgoals, until a metrics and a selection technqiue can be
+found.Together, subgoals ``satisfice'' (should meet) the higher level softgoals.
+
+The catalogues of test selection goals and selection technqiues are composed
+from many sources. Once source is  that we have survey test selection papers
+published in the major software engineering venue since year 1995, especially in
+software testing and softwar maintenance literature. Since there are some
+overlaps between test selection and prioritization,minimization, we also extend our survery to prioritization and minimization in some cases. A
+complete list of paper survery to build the catagloue is in appendix A.
+In surveying test selection releated literatures, we extract information deplict
+in figure xx for each paper. Some of the information are not explictly mentioned
+in the paper. For example,  most of the tesst optimization research were
+performed with one or several goals in mind, but not all goals are specified
+explictily. In that case, we have documented the goals for the paper  based on
+our understanding of the research. 
+
+\underline{add diagram here goal-data-metrics-evaluation metrics etc. on
+whiteboard}
+\subsection{Identified test selection goals}
+
+
+\subsection{summary}
+Some selection goals and techniques are also come from the knowledge in the
+industry. As this framework is used in practice, test engineers can add
+additional goals and techniques to the catalogues in the framework. Knowledge
+and experience from wide range of industry settings can be recorded in the
+framework and made available for sharing. Test engineers and researcher would
+have access to selection goals and techniques beyond their immediate domain ,
+and can adapt them to meet the needs for particular domain or project.
+
+
+
+
+In addition, some of the goals are ambigous or not granaluar enough. 
+
+
+%----------------------------------------------------------------------
+% END MATERIAL
+%----------------------------------------------------------------------
+% B I B L I O G R A P H Y
+% -----------------------
+
+% The following statement selects the style to use for references.  It controls the sort order of the entries in the bibliography and also the formatting for the in-text labels.
+%\bibliographystyle{plain}
+% This specifies the location of the file containing the bibliographic information.  
+% It assumes you're using BibTeX (if not, why not?).
+%\bibliography{../../bib/thesis}
+% The following statement causes the title "References" to be used for the biliography section:
+%\renewcommand{\bibname}{References}
+%\addcontentsline{toc}{chapter}{\textbf{References}}
+% Tip 5: You can create multiple .bib files to organize your references. 
+% Just list them all in the \bibliogaphy command, separated by commas (no spaces).
+
+% The following statement causes the specified references to be added to the bibliography% even if they were not 
+% cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
+%\nocite{*}

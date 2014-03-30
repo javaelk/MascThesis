@@ -1,0 +1,21 @@
+
+reasons to seperate techniques from their implmentations:
+
+1)
+As there is no clear definition of what consititue a technique[Engstrom], we seperate a technique from its implmentations so that a technqiue can have one of many concreate implmentations.
+A technique is a abstract concept that has one of many realization of the concept. From a test practioner point of view, not only he has to to select a suitable technique to meet his goals ,but also need to select 
+a concert implementation of the technique to suit his product and process. Since one of the goals of this framework is to ease the barrier of applying STS techniques in industry practice, we not only provide the functionality to select STS technqiues, but also the implmenation of the techniques.
+
+2) 
+Extend the discussion in [Engstrom], many code based STS techniques are specified in a abstract manner, e.g. technqiues that handle object-oriented progrmas in generat. However, due to difference between programming languages, there may be a need to have different concerate implmenation for different languages. Test practioners then can select implmentation of the techniques based on the programming languages of the SUT.
+
+
+
+
+3) The cost of the STS is dependent to the implementation. Differnet implmentation of STS techniques may have siginificant differnent computation cost.
+
+
+Relationship between technique and its implemnations
+Implemnation of the technique should maintain technique's properties. For example, a safe STS technqiue 's implemnation should also be safe.
+
+

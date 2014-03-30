@@ -1,0 +1,234 @@
+\chapter{introduction}\label{chap:intro}
+
+
+Regression Test Selection(RTS) is a research area aimed at selecting a subset
+of test cases from exsiting test suite for regression testing. Many RTS
+techniques have been proposed and evaluated , %1)test selection is effective
+empirical evaluation of these technqiues indicats that algorithms can be very
+effective in reducing the size of the test suite while still maintain
+safty\cite{}. One of the challenges for test organizations adopt RTS techniques
+is to determine which specific RTS technique to use. Our proposed STS framework helps test engineers explictly express their test selection goals, systematically analyze software artifacts available in the development process, and select a STS technique provides the most benifits with lowest cost. This framework also helps the research community access to published STS techniques and reproduce the experiments or
+conduct new experiments.
+
+
+
+
+2)effectiveness of each technqiues varies
+ these studies also show that the facors such as the structure of the
+ code,location of the changes, granularity of hte test suite, and frequency of
+ the testing affect the reduciton in test suite size that can be achieved by the
+ technqiues.
+
+3)how engineers select which techqniues to use? 
+Testing is a costly process that can yield over half of total
+devopment cost. Regardless the investment on testing, exhaustive testing is not
+practical in the industry. In most industry software projects, some forms of
+test selection do exist. However, the  Traditionally, decision on which test
+selection technqiues to use is made mostly ad hoc. Test engineers may choose a
+particular technique based on previous empirical evaluation results of the
+technique. However, as empirical evaluation is high dependent on the test
+subjects. \cite{DBLP:conf/esem/KasurinenTS10}
+
+
+On the other hand, it does not make economical sense if the cost of choosing a
+good test selection technqiue is higher than the cost of test selection itself.
+Or more precisely, the benefit received from test selection should higher
+than the cost of the test selection , including cost of choosing a
+test selection techqniue and applying the tecnique.
+\underline{need to find out an abbreviation of software test selection
+technqiues - STS techniques?}
+
+
+a safe regression test selection technique is one that , under certain
+assumptions, selects every test case from the original test suite that can
+expose fault in the modified program.\cite{DBLP:journals/tse/RothermelH96}
+
+To our knowledge, this paper is the first to propose a framework to select STS
+technqiues. Most of the STS researches to date are focusing on
+finding an effective STS technqiue and performing post morterm empirical
+evaluation of techqniues. These focus are not surprising from academia's point of
+view as the goal of the research is to find an effective techqnique.
+However,from engineering point of view, the first challegne is to determine
+which STS technqiue to use. 
+
+\chapter{Releated Work}\label{ch:related-work}
+%======================================================================
+In this chapter, we survey research results related to Test Case Selection
+problem. Various approaches have been proposed using different
+techniques. Similar to \cite{Yoo:2010}, we surveryed literature has been
+published in major software engineering domain, especially in software testing and softwar
+maintenance literature. Different from \cite{Yoo:2010}, our focus is on software
+test selection. Though some minimization and prioritization literatures also share
+similar goals and technqiues as STS. Another difference from \cite{Yoo:2010}is
+that we first group the literatures by their goals and required data, then group by
+technqiues. This way is more aligned with the determination process in our
+framework. The following subsections describe these literatures in details and
+highlighting their strengths and weaknesses.
+
+Arafeen and Do\cite{DBLP:conf/issre/ArafeenD11} applied Analytic Hierarchy
+Process(AHP) method for selecting test prioritization
+techniques.\underline{talk more about how it's done, what is AHP etc}. It's
+closely related to our research as it's also trying to address the problem of selecting a technique for test practitioners.The empirical study results show AHP is effective for
+selecting appropriate test case prioritization techniques across
+system lifetime. AHP outperformed 15 out of 20 cases when the total cost-benefit
+values are considered, AHP outperformed 16 out of 20 cases when total number of version that performed best is considered.
+However, the pairwise comparison values in AHP is subject to human judgement
+and thus the results can be biased by personnel's knowledge and experience.
+In the empirical study of \cite{DBLP:conf/issre/ArafeenD11}, values in AHP are
+assigned based on history data regarding the performance of test case prioritization techniques observed
+from previous empirical studies. However, empirical evidence for differences
+between techniques is not very strong, and sometimes contradictory\cite{}. Also
+practicality point of view,  assigning values in AHP could be a daunting task
+for a test practitioner who do not have to the access or the knowledge of
+previous empirical studies in academia. 
+
+%----------------------------------------------------------------------
+
+\section{backgroud}
+
+\section{Code modification based techniques}
+%----------------------------------------------------------------------
+
+Many researchers proposed techniques focusing on selecting all nonobsolete tests
+in $T$ that execute changed code from $P$ to $P^\prime$. These techniques are
+called safe techniques as they select all modification-traversing test cases in
+$T$. As $T_{fr} = T_{mr} \le T_{mt}$, these techniques most likely are not
+precise, i.e. not all selected modification-traversing test cases will reveal
+fault. These techniques typically require knowledge of code coverage information
+of each test case $t$ in $T$ and source code of $P$ and $P^\prime$.
+
+
+
+
+%See equation \ref{eqn_pi} on page \pageref{eqn_pi}.\footnote{A famous
+%equation.}
+
+
+\newpage
+\section{Cost Models}
+Do et al. has proposed and applied comprehensive economic model for
+regression testing process
+~\cite{DBLP:conf/issta/DoR08,DBLP:conf/sigsoft/DoMTR08,DBLP:conf/sigsoft/DoR06,5482587}.
+This cost model captures both cost and benefit factors relavant to regression testing process. The cost model is used to support evaluation of various
+regression test selection techniques.
+\\The major difference between our cost
+model and cost model presented in \cite{DBLP:conf/issta/DoR08} is that their
+cost model is post mortem, i.e the cost model is to evaluate the effect of
+regression testing techniques after the regression testing phase completed.
+Our cost model is to provide cost estimation prior to apply any test selection technique. As suggested in \cite{DBLP:conf/sigsoft/DoR06}, test selection technique might vary with test suite type. Providing cost estimation to practioners up front will help them to make consicous decision on which test selection technique to choose for a specific release or test suite.
+Our cost model is based on \cite{DBLP:conf/issta/DoR08} and has removed factors
+can not be abtained or resonablly estimated before regression testing
+start.Specificially, we made following changes to Do's cost
+model.\begin{itemize}\item Remove Delayed fault detection feedback(CD).CD
+captures the cost of delaying product release due to late discovered faults. CD directly concerns with order of the test cases.Cost of delayed fault feedback would be low if test cases are
+executed in a priority order such that faults are found early in the regression
+testing cycle and sufficent time is given to fix the faults prior to
+release date. However, our cost model is to provide cost estimation on
+various test selection techniques. We do not concerns with the order of test
+cases therefore we removed this cost factor from our model.\item Do's cost
+model accounts for lifetime factors by tracking costs and benefits across entire
+sequences of system releases. However, it's very difficult to estimate the
+number of release $n$ prior to regression testing phase. There are research in
+predicting total number of faults in a
+release\cite{DBLP:journals/smr/RajaHH09}. However, the number of releases
+built in regression testing phase may not directly related to total number of faults corrected. Some organizations create new bulid on a time boxed schedule, e.g one build per week; some organizations create new build on demand, e.g. only when there are significant faults are corrected a new build will
+be created. In our experiement, we assume a fixed daily build. \item Consider
+the cost of Known Fault.\underline{Explain different test execution status
+passed,failed, blocked}. When there are difference resources to fix faults and
+\end{itemize}
+
+\section {A surver of software test optimization goals}
+\underline{a comprehensive list of all papers and what are the goals,organize
+based on goals and subgoals,incl. selelction,prioritzation and reduction}. 
+Many software test optimization techniques including test selection,
+prioritization and reductin technqiues have been researched over the
+years.Researchers normally have one or many goals implcitly or explictly in mind
+when researching techqniuqes. In this section, we survery the goals behind
+current software test optimizatioin researchs to date and point out how these
+goals impact our framework design.
+
+
+\section {Goal Modelling}
+ %3 ways to model goals- AND-OR graph,SIG, Lattice , what is goal modelling in
+ % general. what is SIG, what others use and why we don't use it.
+Goal Modelling is an important element in requirments engineering to visulize
+functional or non-funcitonal requirements. It's also used widely in Process Analysis, Business Analysis and other engineering domains. A goal in Requirement Engineering is a stakeholder's objective for the system. A goal relates to one or many low-level requirements. A goal
+model is a set of nodes representing hierarchically decomposed goals plus a
+set of edges representing both decomposition and contribution relationships
+among goals\cite{Ernst:2006:VNR:1173697.1174072}.Goal modeling helps engineers systematically formalize stakeholder goals and visulaze hireacy and relationship of goals.
+
+Goal models can also be used to capture actors and dependencies
+\cite{Ernst:2006:VNR:1173697.1174072,DBLP:conf/icse/YuM94} An Actor Dependecny
+model consists of a set of nodes to represent actors , and each link between two
+actors indicates that one actor depends on the other in order that
+the former may attain some goals.
+ 
+Salehie et al. use GQM approach to identify goals and  metrics for test case
+priroitziation. GQM does not capature interdependcey between goals. 
+ 
+Soft goals are goals can be partially achieved.
+
+
+%May 30,2011
+Chung et al. proposed a Softgoal Interdependecy Graphs in \cite{NFR} as part of
+the non-functional requirement framework. The major concepts of the framework is
+a graph representation of softgoals and interdependices among softgoals.
+In SIG, Softgoals, which are ``soft'' in nature, are shown as clouds. Softgoals have associated labels (values representing the degree to
+which a softgoal is achieved) which are used to support the reasoning process
+during design. Softgoals can also have an associated prioirty
+(criticality or dominace). Softgoals can also have other attributes, such as
+author, and time of creation of the softgoal.
+Softgoals are connected by interdependecy links, which are shown as lines, often
+with arrowheads. Interdependencies show refinements of ``parent'' softgoals downwards into other, more specific, ``offspring'' softgoals. They also show the contribution (impact) of offspring upwards upon the meeting of other (parent) softgoals.
+
+In the following, we provide more details softgoal interdependancies about SIG
+based on \cite{NFR}.
+
+
+
+In the context of this paper, we use goal models to capture
+stakeholders motiviations and intentions to perform test selection. A goal is a
+stakeholer's objective for performing test case selection. Stakeholder typically are test engineers or test managers who wish to perform test selection with some objectives in mind. A goal relates to one or
+many test selection techniques. 
+Engineers select test cases with some test selection technqiues need to consider
+the needs and wants from other stakeholders in the organization. Goal modeling
+can help engineers to have deeper understanding of various goals from other
+software engineers, managers and customers in order to choose the best test
+selection techniques and ultimately deliver the best product balance all
+stakeholders needs.
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Introduction}
+We expect this framework to help test engineers make better choice of STS
+techniques that are most apporiate for their organization and processes.
+Challeges- empirical results various for different program.
+
+% ======================================================================
+\chapter{3}
+% ======================================================================
+
+
+\section{ Constraint satisfaction problem}
+%\href{http://en.wikipedia.org/wiki/Constraint_satisfaction_problem}{Constraint
+%satisfaction problem}
+
+\section{Design of Experiments}
+In the design of experiments, an idependent variable's values are controlled or
+selected by the experimenter to determine its relationship to an observed
+phenomenon (i.e. the dependent variable). 
+
+In summary:
+Independent variables answer the question "What do I change?"
+Dependent variables answer the question "What do I observe?"
+Controlled variables answer the question "What do I keep the same?"
+Extraneous variables answer the question "What uninteresting variables might mediate the effect of the IV on the DV?"
+This would be a good place for some figures and tables.

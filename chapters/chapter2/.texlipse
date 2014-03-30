@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Tue Aug 24 13:53:37 EDT 2010
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=chapter2.tex
+outputFile=chapter2.pdf
+langSpell=en
+markDer=true
+srcDir=

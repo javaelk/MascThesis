@@ -1,0 +1,671 @@
+@inproceedings{DBLP:conf/issta/DoR08,
+  author    = {Hyunsook Do and
+               Gregg Rothermel},
+  title     = {Using sensitivity analysis to create simplified economic
+               models for regression testing},
+  booktitle = {ISSTA},
+  year      = {2008},
+  pages     = {51-62},
+  ee        = {http://doi.acm.org/10.1145/1390630.1390639},
+  crossref  = {DBLP:conf/issta/2008},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigsoft/DoMTR08,
+  author    = {Hyunsook Do and
+               Siavash Mirarab and
+               Ladan Tahvildari and
+               Gregg Rothermel},
+  title     = {An empirical study of the effect of time constraints on
+               the cost-benefits of regression testing},
+  booktitle = {SIGSOFT FSE},
+  year      = {2008},
+  pages     = {71-82},
+  ee        = {http://doi.acm.org/10.1145/1453101.1453113},
+  crossref  = {DBLP:conf/sigsoft/2008},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigsoft/DoR06,
+  author    = {Hyunsook Do and
+               Gregg Rothermel},
+  title     = {An empirical study of regression testing techniques incorporating
+               context and lifetime factors and improved cost-benefit models},
+  booktitle = {SIGSOFT FSE},
+  year      = {2006},
+  pages     = {141-151},
+  ee        = {http://doi.acm.org/10.1145/1181775.1181793},
+  crossref  = {DBLP:conf/sigsoft/2006},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/ese/DoRK06,
+  author    = {Hyunsook Do and
+               Gregg Rothermel and
+               Alex Kinneer},
+  title     = {Prioritizing JUnit Test Cases: An Empirical Assessment and
+               Cost-Benefits Analysis},
+  journal   = {Empirical Software Engineering},
+  volume    = {11},
+  number    = {1},
+  year      = {2006},
+  pages     = {33-70},
+  ee        = {http://dx.doi.org/10.1007/s10664-006-5965-8},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tse/DoR06,
+  author    = {Hyunsook Do and
+               Gregg Rothermel},
+  title     = {On the Use of Mutation Faults in Empirical Assessments of
+               Test Case Prioritization Techniques},
+  journal   = {IEEE Trans. Software Eng.},
+  volume    = {32},
+  number    = {9},
+  year      = {2006},
+  pages     = {733-752},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/TSE.2006.92},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icsm/DoR05,
+  author    = {Hyunsook Do and
+               Gregg Rothermel},
+  title     = {A Controlled Experiment Assessing Test Case Prioritization
+               Techniques via Mutation Faults},
+  booktitle = {ICSM},
+  year      = {2005},
+  pages     = {411-420},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.9},
+  crossref  = {DBLP:conf/icsm/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/ese/DoER05,
+  author    = {Hyunsook Do and
+               Sebastian G. Elbaum and
+               Gregg Rothermel},
+  title     = {Supporting Controlled Experimentation with Testing Techniques:
+               An Infrastructure and its Potential Impact},
+  journal   = {Empirical Software Engineering},
+  volume    = {10},
+  number    = {4},
+  year      = {2005},
+  pages     = {405-435},
+  ee        = {http://dx.doi.org/10.1007/s10664-005-3861-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/sqj/ElbaumRKM04,
+  author    = {Sebastian G. Elbaum and
+               Gregg Rothermel and
+               Satya Kanduri and
+               Alexey G. Malishevsky},
+  title     = {Selecting a Cost-Effective Test Case Prioritization Technique},
+  journal   = {Software Quality Journal},
+  volume    = {12},
+  number    = {3},
+  year      = {2004},
+  pages     = {185-210},
+  ee        = {http://dx.doi.org/10.1023/B:SQJO.0000034708.84524.22},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/stvr/ElbaumKMRK03,
+  author    = {Sebastian G. Elbaum and
+               Praveen Kallakuri and
+               Alexey G. Malishevsky and
+               Gregg Rothermel and
+               Satya Kanduri},
+  title     = {Understanding the effects of changes on the cost-effectiveness
+               of regression testing techniques},
+  journal   = {Softw. Test., Verif. Reliab.},
+  volume    = {13},
+  number    = {2},
+  year      = {2003},
+  pages     = {65-83},
+  ee        = {http://dx.doi.org/10.1002/stvr.263},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@ARTICLE{5482587, 
+author={Do, H. and Mirarab, S. and Tahvildari, L. and Rothermel, G.}, 
+journal={Software Engineering, IEEE Transactions on}, 
+title={The Effects of Time Constraints on Test Case Prioritization: A Series of Controlled Experiments}, 
+year={2010}, 
+month={}, 
+volume={PP}, 
+number={99}, 
+pages={1 -1}, 
+keywords={}, 
+doi={10.1109/TSE.2010.58}, 
+ISSN={0098-5589},}
+
+@inproceedings{DBLP:conf/icse/RothermelEMKD02,
+  author    = {Gregg Rothermel and
+               Sebastian G. Elbaum and
+               Alexey G. Malishevsky and
+               Praveen Kallakuri and
+               Brian Davia},
+  title     = {The impact of test suite granularity on the cost-effectiveness
+               of regression testing},
+  booktitle = {ICSE},
+  year      = {2002},
+  pages     = {130-140},
+  ee        = {http://doi.acm.org/10.1145/581339.581358},
+  crossref  = {DBLP:conf/icse/2002},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tse/ElbaumMR02,
+  author    = {Sebastian G. Elbaum and
+               Alexey G. Malishevsky and
+               Gregg Rothermel},
+  title     = {Test Case Prioritization: A Family of Empirical Studies},
+  journal   = {IEEE Trans. Software Eng.},
+  volume    = {28},
+  number    = {2},
+  year      = {2002},
+  pages     = {159-182},
+  ee        = {http://www.computer.org:80/tse/ts2002/e0159abs.htm},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tosem/BibleRR01,
+  author    = {John Bible and
+               Gregg Rothermel and
+               David S. Rosenblum},
+  title     = {A comparative study of coarse- and fine-grained safe regression
+               test-selection techniques},
+  journal   = {ACM Trans. Softw. Eng. Methodol.},
+  volume    = {10},
+  number    = {2},
+  year      = {2001},
+  pages     = {149-183},
+  ee        = {http://doi.acm.org/10.1145/367008.367015},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tosem/GravesHKPR01,
+  author    = {Todd L. Graves and
+               Mary Jean Harrold and
+               Jung-Min Kim and
+               Adam A. Porter and
+               Gregg Rothermel},
+  title     = {An empirical study of regression test selection techiques},
+  journal   = {ACM Trans. Softw. Eng. Methodol.},
+  volume    = {10},
+  number    = {2},
+  year      = {2001},
+  pages     = {184-208},
+  ee        = {http://doi.acm.org/10.1145/367008.367020},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tse/RothermelUCH01,
+  author    = {Gregg Rothermel and
+               Roland H. Untch and
+               Chengyun Chu and
+               Mary Jean Harrold},
+  title     = {Prioritizing Test Cases For Regression Testing},
+  journal   = {IEEE Trans. Software Eng.},
+  volume    = {27},
+  number    = {10},
+  year      = {2001},
+  pages     = {929-948},
+  ee        = {http://www.computer.org/tse/ts2001/e0929abs.htm},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/stvr/RothermelHD00,
+  author    = {Gregg Rothermel and
+               Mary Jean Harrold and
+               Jeinay Dedhia},
+  title     = {Regression Test Selection for C++ Software},
+  journal   = {Softw. Test., Verif. Reliab.},
+  volume    = {10},
+  number    = {2},
+  year      = {2000},
+  pages     = {77-109},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icse/GravesHKPR98,
+  author    = {Todd L. Graves and
+               Mary Jean Harrold and
+               Jung-Min Kim and
+               Adam A. Porter and
+               Gregg Rothermel},
+  title     = {An Empirical Study of Regression Test Selection Techniques},
+  booktitle = {ICSE},
+  year      = {1998},
+  pages     = {188-197},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tse/RothermelH98,
+  author    = {Gregg Rothermel and
+               Mary Jean Harrold},
+  title     = {Empirical Studies of a Safe Regression Test Selection Technique},
+  journal   = {IEEE Trans. Software Eng.},
+  volume    = {24},
+  number    = {6},
+  year      = {1998},
+  pages     = {401-419},
+  ee        = {http://csdl.computer.org/comp/trans/ts/1998/06/e0401abs.htm},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tosem/RothermelH97,
+  author    = {Gregg Rothermel and
+               Mary Jean Harrold},
+  title     = {A Safe, Efficient Regression Test Selection Technique},
+  journal   = {ACM Trans. Softw. Eng. Methodol.},
+  volume    = {6},
+  number    = {2},
+  year      = {1997},
+  pages     = {173-210},
+  ee        = {http://doi.acm.org/10.1145/248233.248262},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/tse/RothermelH96,
+  author    = {Gregg Rothermel and
+               Mary Jean Harrold},
+  title     = {Analyzing Regression Test Selection Techniques},
+  journal   = {IEEE Trans. Software Eng.},
+  volume    = {22},
+  number    = {8},
+  year      = {1996},
+  pages     = {529-551},
+  ee        = {http://www.computer.org/tse/ts1996/e0529abs.htm},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/issta/RothermelH94,
+  author    = {Gregg Rothermel and
+               Mary Jean Harrold},
+  title     = {Selecting Tests and Identifying Test Coverage Requirements
+               for Modified Software},
+  booktitle = {ISSTA},
+  year      = {1994},
+  pages     = {169-184},
+  ee        = {http://doi.acm.org/10.1145/186258.187171},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icsm/RothermelH93,
+  author    = {Gregg Rothermel and
+               Mary Jean Harrold},
+  title     = {A Safe, Efficient Algorithm for Regression Test Selection},
+  booktitle = {ICSM},
+  year      = {1993},
+  pages     = {358-367},
+  crossref  = {DBLP:conf/icsm/1993},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/oopsla/HarroldJLLOPSSG01,
+  author    = {Mary Jean Harrold and
+               James A. Jones and
+               Tongyu Li and
+               Donglin Liang and
+               Alessandro Orso and
+               Maikel Pennings and
+               Saurabh Sinha and
+               S. Alexander Spoon and
+               Ashish Gujarathi},
+  title     = {Regression Test Selection for Java Software},
+  booktitle = {OOPSLA},
+  year      = {2001},
+  pages     = {312-326},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icse/ChenRV94,
+  author    = {Yih-Farn Chen and
+               David S. Rosenblum and
+               Kiem-Phong Vo},
+  title     = {TestTube: A System for Selective Regression Testing},
+  booktitle = {ICSE},
+  year      = {1994},
+  pages     = {211-220},
+  ee        = {http://portal.acm.org/citation.cfm?id=257734.257769},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/compsac/BeydedaG01,
+  author    = {Sami Beydeda and
+               Volker Gruhn},
+  title     = {Integrating White- and Black-Box Techniques for Class-Level
+               Regression Testing},
+  booktitle = {COMPSAC},
+  year      = {2001},
+  pages     = {357-362},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/CMPSAC.2001.960639},
+  crossref  = {DBLP:conf/compsac/2001},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigsoft/OrsoSH04,
+  author    = {Alessandro Orso and
+               Nanjuan Shi and
+               Mary Jean Harrold},
+  title     = {Scaling regression testing to large software systems},
+  booktitle = {SIGSOFT FSE},
+  year      = {2004},
+  pages     = {241-251},
+  ee        = {http://doi.acm.org/10.1145/1029894.1029928},
+  crossref  = {DBLP:conf/sigsoft/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icsm/VokolosF98,
+  author    = {Filippos I. Vokolos and
+               Phyllis G. Frankl},
+  title     = {Empirical Evaluation of the Textual Differencing Regression
+               Testing Technique},
+  booktitle = {ICSM},
+  year      = {1998},
+  pages     = {44-53},
+  ee        = {http://dlib.computer.org/conferen/icsm/8779/pdf/87790044.pdf},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icsm/BriandLS02,
+  author    = {Lionel C. Briand and
+               Yvan Labiche and
+               G. Soccar},
+  title     = {Automating Impact Analysis and Regression Test Selection
+               Based on UML Designs},
+  booktitle = {ICSM},
+  year      = {2002},
+  pages     = {252-261},
+  ee        = {http://computer.org/proceedings/icsm/1819/18190252abs.htm},
+  crossref  = {DBLP:conf/icsm/2002},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/infsof/BriandLH09,
+  author    = {Lionel C. Briand and
+               Yvan Labiche and
+               S. He},
+  title     = {Automating regression test selection based on UML designs},
+  journal   = {Information {\&} Software Technology},
+  volume    = {51},
+  number    = {1},
+  year      = {2009},
+  pages     = {16-30},
+  ee        = {http://dx.doi.org/10.1016/j.infsof.2008.09.010},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icst/WikstrandFGZW09,
+  author    = {Greger Wikstrand and
+               Robert Feldt and
+               Jeevan Kumar Gorantla and
+               Wang Zhe and
+               Conor White},
+  title     = {Dynamic Regression Test Selection Based on a File Cache},
+  booktitle = {ICST},
+  year      = {2009},
+  pages     = {299-302},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/ICST.2009.42},
+  crossref  = {DBLP:conf/icst/2009},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/re/LiaskosMSM10,
+  author    = {Sotirios Liaskos and
+               Sheila A. McIlraith and
+               Shirin Sohrabi and
+               John Mylopoulos},
+  title     = {Integrating Preferences into Goal Models for Requirements
+               Engineering},
+  booktitle = {RE},
+  year      = {2010},
+  pages     = {135-144},
+  ee        = {http://dx.doi.org/10.1109/RE.2010.26},
+  crossref  = {DBLP:conf/re/2010},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/re/2010,
+  title     = {RE 2010, 18th IEEE International Requirements Engineering
+               Conference, Sydney, New South Wales, Australia, September
+               27 - October 1, 2010},
+  booktitle = {RE},
+  publisher = {IEEE Computer Society},
+  year      = {2010},
+  isbn      = {978-0-7695-4162-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/re/LiaskosLYYM06,
+  author    = {Sotirios Liaskos and
+               Alexei Lapouchnian and
+               Yijun Yu and
+               Eric S. K. Yu and
+               John Mylopoulos},
+  title     = {On Goal-based Variability Acquisition and Analysis},
+  booktitle = {RE},
+  year      = {2006},
+  pages     = {76-85},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/RE.2006.45},
+  crossref  = {DBLP:conf/re/2006},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/re/2006,
+  title     = {14th IEEE International Conference on Requirements Engineering
+               (RE 2006), 11-15 September 2006, Minneapolis/St.Paul, Minnesota,
+               USA},
+  booktitle = {RE},
+  publisher = {IEEE Computer Society},
+  year      = {2006},
+  isbn      = {0-7695-2555-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/er/GiorginiMNS02,
+  author    = {Paolo Giorgini and
+               John Mylopoulos and
+               Eleonora Nicchiarelli and
+               Roberto Sebastiani},
+  title     = {Reasoning with Goal Models},
+  booktitle = {ER},
+  year      = {2002},
+  pages     = {167-181},
+  ee        = {http://link.springer.de/link/service/series/0558/bibs/2503/25030167.htm},
+  crossref  = {DBLP:conf/er/2002},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/er/2002,
+  editor    = {Stefano Spaccapietra and
+               Salvatore T. March and
+               Yahiko Kambayashi},
+  title     = {Conceptual Modeling - ER 2002, 21st International Conference
+               on Conceptual Modeling, Tampere, Finland, October 7-11,
+               2002, Proceedings},
+  booktitle = {ER},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {2503},
+  year      = {2002},
+  isbn      = {3-540-44277-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@article{DBLP:journals/jss/TahvildariKM03,
+  author    = {Ladan Tahvildari and
+               Kostas Kontogiannis and
+               John Mylopoulos},
+  title     = {Quality-driven software re-engineering},
+  journal   = {Journal of Systems and Software},
+  volume    = {66},
+  number    = {3},
+  year      = {2003},
+  pages     = {225-239},
+  ee        = {http://dx.doi.org/10.1016/S0164-1212(02)00082-1},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@inproceedings{DBLP:conf/wcre/TahvildariKM01,
+  author    = {Ladan Tahvildari and
+               Kostas Kontogiannis and
+               John Mylopoulos},
+  title     = {Requirements-Driven Software Re-engineering Framework},
+  booktitle = {WCRE},
+  year      = {2001},
+  pages     = {71-80},
+  ee        = {http://computer.org/proceedings/wcre/1303/13030071abs.htm},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@inproceedings{DBLP:conf/kbse/LiaskosMM09,
+  author    = {Sotirios Liaskos and
+               Sheila A. McIlraith and
+               John Mylopoulos},
+  title     = {Towards Augmenting Requirements Models with Preferences},
+  booktitle = {ASE},
+  year      = {2009},
+  pages     = {565-569},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/ASE.2009.91},
+  crossref  = {DBLP:conf/kbse/2009},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/kbse/2009,
+  title     = {ASE 2009, 24th IEEE/ACM International Conference on Automated
+               Software Engineering, Auckland, New Zealand, November 16-20,
+               2009},
+  booktitle = {ASE},
+  publisher = {IEEE Computer Society},
+  year      = {2009},
+  isbn      = {978-0-7695-3891-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@inproceedings{DBLP:conf/icse/YuM94,
+  author    = {Eric S. K. Yu and
+               John Mylopoulos},
+  title     = {Understanding "Why" in Software Process Modelling, Analysis,
+               and Design},
+  booktitle = {ICSE},
+  year      = {1994},
+  pages     = {159-168},
+  ee        = {http://portal.acm.org/citation.cfm?id=257734.257757},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@article{Tahvildari:2003:QSR:860127.860132,
+ author = {Tahvildari, Ladan and Kontogiannis, Kostas and Mylopoulos, John},
+ title = {Quality-driven software re-engineering},
+ journal = {J. Syst. Softw.},
+ volume = {66},
+ issue = {3},
+ month = {June},
+ year = {2003},
+ issn = {0164-1212},
+ pages = {225--239},
+ numpages = {15},
+ url = {http://portal.acm.org.proxy.lib.uwaterloo.ca/citation.cfm?id=860127.860132},
+ doi = {10.1016/S0164-1212(02)00082-1},
+ acmid = {860132},
+ publisher = {Elsevier Science Inc.},
+ address = {New York, NY, USA},
+ keywords = {design patterns, non-functional requirements, soft-goal interdependency graphs, software architecture, software metrics, software quality, software re-engineering},
+} 
+@inproceedings{Ernst:2006:VNR:1173697.1174072,
+ author = {Ernst, Neil A. and Yu, Yijun and Mylopoulos, John},
+ title = {Visualizing non-functional requirements},
+ booktitle = {Proceedings of the 1st international workshop on Requirements Engineering Visualization},
+ year = {2006},
+ isbn = {0-7695-2711-6},
+ pages = {2--},
+ url = {http://portal.acm.org.proxy.lib.uwaterloo.ca/citation.cfm?id=1173697.1174072},
+ doi = {10.1109/REV.2006.10},
+ acmid = {1174072},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {quality attributes visualization, nonfunctional requirements, tradeoffs, performance, trust},
+} 
+@INBOOK{Chung:2000,
+   title = "Non-Functional Requirements in Software Engineering",
+   author = {L. Chung and B. A. Nixon and E. Yu and J. Mylopoulos},
+   publisher = "Kluwer Academic Publishing",
+   edition = "first",
+   year = 2000,
+   pages = "15--71",
+}
+
+@article{Yoo:2010,
+author = {S. Yoo and M. Harman},
+title = {Regression testing minimization, selection and prioritization: a survey},
+journal = {Software Testing, Verification & Reliability},
+year = {2010},
+doi = {10.1002/stvr.430},
+masid = {15203265}
+}
+
+@inproceedings{DBLP:conf/csmr/SalehieLTDLM11,
+  author    = {Mazeiar Salehie and
+               Sen Li and
+               Ladan Tahvildari and
+               Rozita Dara and
+               Shimin Li and
+               Mark Moore},
+  title     = {Prioritizing Requirements-Based Regression Test Cases: A
+               Goal-Driven Practice},
+  booktitle = {CSMR},
+  year      = {2011},
+  pages     = {329-332},
+  ee        = {http://dx.doi.org/10.1109/CSMR.2011.46},
+  crossref  = {DBLP:conf/csmr/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/csmr/2011,
+  editor    = {Tom Mens and
+               Yiannis Kanellopoulos and
+               Andreas Winter},
+  title     = {15th European Conference on Software Maintenance and Reengineering,
+               CSMR 2011, 1-4 March 2011, Oldenburg, Germany},
+  booktitle = {CSMR},
+  publisher = {IEEE Computer Society},
+  year      = {2011},
+  isbn      = {978-0-7695-4343-7},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@article{DBLP:journals/smr/RajaHH09,
+  author    = {Uzma Raja and
+               David P. Hale and
+               Joanne E. Hale},
+  title     = {Modeling software evolution defects: a time series approach},
+  journal   = {Journal of Software Maintenance},
+  volume    = {21},
+  number    = {1},
+  year      = {2009},
+  pages     = {49-71},
+  ee        = {http://dx.doi.org/10.1002/smr.398},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@article{DBLP:journals/smr/WhiteJRR08,
+  author    = {Lee J. White and
+               Khaled Jaber and
+               Brian Robinson and
+               V{\'a}clav Rajlich},
+  title     = {Extended firewall for regression testing: an experience
+               report},
+  journal   = {Journal of Software Maintenance},
+  volume    = {20},
+  number    = {6},
+  year      = {2008},
+  pages     = {419-433},
+  ee        = {http://dx.doi.org/10.1002/smr.371},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@article{DBLP:journals/tse/RosenblumW97,
+  author    = {David S. Rosenblum and
+               Elaine J. Weyuker},
+  title     = {Using Coverage Information to Predict the Cost-Effectiveness
+               of Regression Testing Strategies},
+  journal   = {IEEE Trans. Software Eng.},
+  volume    = {23},
+  number    = {3},
+  year      = {1997},
+  pages     = {146-156},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/32.585502},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}

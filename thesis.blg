@@ -1,0 +1,37 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chapters/chapter2/chapter2.aux
+A level-1 auxiliary file: chapters/chapter4/chapter4.aux
+White space in argument---line 6 of file chapters/chapter4/chapter4.aux
+ : \citation{non-functional
+ :                          requirements in software engineering}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: chapters/chapter6/chapter6.aux
+The style file: plain.bst
+Database file #1: bib/mythesisbib.bib
+A bad cross reference---entry "DBLP:conf/esem/KasurinenTS10"
+refers to entry "DBLP:conf/esem/2010", which doesn't exist
+A bad cross reference---entry "DBLP:conf/issta/DoR08"
+refers to entry "DBLP:conf/issta/2008", which doesn't exist
+A bad cross reference---entry "DBLP:conf/sigsoft/DoMTR08"
+refers to entry "DBLP:conf/sigsoft/2008", which doesn't exist
+A bad cross reference---entry "DBLP:conf/sigsoft/DoR06"
+refers to entry "DBLP:conf/sigsoft/2006", which doesn't exist
+A bad cross reference---entry "DBLP:conf/icsm/DoR05"
+refers to entry "DBLP:conf/icsm/2005", which doesn't exist
+A bad cross reference---entry "DBLP:conf/icse/RothermelEMKD02"
+refers to entry "DBLP:conf/icse/2002", which doesn't exist
+A bad cross reference---entry "DBLP:conf/icsm/RothermelH93"
+refers to entry "DBLP:conf/icsm/1993", which doesn't exist
+A bad cross reference---entry "DBLP:conf/compsac/BeydedaG01"
+refers to entry "DBLP:conf/compsac/2001", which doesn't exist
+A bad cross reference---entry "DBLP:conf/sigsoft/OrsoSH04"
+refers to entry "DBLP:conf/sigsoft/2004", which doesn't exist
+A bad cross reference---entry "DBLP:conf/icsm/BriandLS02"
+refers to entry "DBLP:conf/icsm/2002", which doesn't exist
+A bad cross reference---entry "DBLP:conf/icst/WikstrandFGZW09"
+refers to entry "DBLP:conf/icst/2009", which doesn't exist
+Warning--I didn't find a database entry for "NFR"
+Warning--to sort, need editor, organization, or key in DBLP:conf/re/2006
+Warning--to sort, need editor, organization, or key in DBLP:conf/kbse/2009
+Warning--to sort, need editor, organization, or key in DBLP:conf/re/2010
+(There were 12 error messages)

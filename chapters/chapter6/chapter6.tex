@@ -1,0 +1,399 @@
+% UW Thesis Template for LaTeX 
+% Last Updated July 8, 2009 by Stephen Carr, IST Client Services
+% FOR ASSISTANCE, please send mail to rt-IST-CSmathsci@ist.uwaterloo.ca
+
+% Effective October 2006, the University of Waterloo 
+% requires electronic thesis submission. See the UW thesis regulations at
+% http://www.grad.uwaterloo.ca/Thesis_Regs/thesistofc.asp.
+% However, many faculties/departments also require one or more printed
+% copies. This template attempts to satisfy requirements for both types of output. 
+% It is based on the standard "report" document class. The "book" document 
+% class can be substituted if you have a very large, multi-part thesis.
+
+% DISCLAIMER
+% To the best of our knowledge, this template satisfies the current UW requirements.
+% However, it is your responsibility to assure that you have met all 
+% requirements of the University and your particular department.
+% Many thanks to Colin Alie for assistance in preparing this updated template.
+
+% -----------------------------------------------------------------------
+
+% By default, output is produced that is geared toward generating a PDF 
+% version optimized for viewing on an electronic display, including 
+% hyperlinks within the PDF.
+ 
+% E.g. to process a thesis called "mythesis.tex" based on this template, run:
+
+% pdflatex mythesis	-- first pass of the pdflatex processor
+% bibtex mythesis	-- generates bibliography from .bib data file(s) 
+% pdflatex mythesis	-- fixes cross-references, bibliographic references, etc
+% pdflatex mythesis	-- fixes cross-references, bibliographic references, etc
+
+% If you use the recommended LaTeX editor, Texmaker, you would open the mythesis.tex
+% file, then click the pdflatex button. Then run BibTeX (under the Tools menu).
+% Then click the pdflatex button two more times. If you have an index as well,
+% you'll need to run MakeIndex from the Tools menu as well, before running pdflatex
+% the last two times.
+
+% N.B. The "pdftex" program allows graphics in the following formats to be
+% included with the "\includegraphics" command: PNG, PDF, JPEG, TIFF
+% Tip 1: Generate your figures and photos in the size you want them to appear
+% in your thesis, rather than scaling them with \includegraphics options.
+% Tip 2: Any drawings you do should be in scalable vector graphic formats:
+% SVG, PNG, WMF, EPS and then converted to PNG or PDF, so they are scalable in
+% the final PDF as well.
+% Tip 3: Photographs should be cropped and compressed so as not to be too large.
+
+% To create a PDF output that is optimized for double-sided printing: 
+%
+% 1) comment-out the \documentclass statement in the preamble below, and
+% un-comment the second \documentclass line.
+%
+% 2) change the value assigned below to the boolean variable
+% "ElectronicVersion" from "true" to "false".
+
+% --------------------- Start of Document Preamble -----------------------
+
+% Specify the document class, default style attributes, and page dimensions
+% For hyperlinked PDF, suitable for viewing on a computer, use this:
+%----------------------------------------------------------------------
+% MAIN BODY
+%----------------------------------------------------------------------
+% Because this is a short document, and to reduce the number of files
+% needed for this template, the chapters are not separate
+% documents as suggested above, but you get the idea. If they were
+% separate documents, they would each start with the \chapter command, i.e, 
+% do not contain \documentclass or \begin{document} and \end{document} commands.
+%======================================================================
+\reversemarginpar
+\setlength{\marginparwidth}{2cm}
+\chapter{Proposing Selection Techniques}
+\label{chap:Proposing Selection Techniques}
+%======================================================================
+\section{Precision Predictor}\label{sec:Precision Predictor}
+\underline{talk about why do we need precision predictor, rw, and others}
+
+Precision] measures the extent to which a technique select
+l  test cases that are non-modification-revealing.
+
+\section{Cost Predictor}
+\label{sec:Cost Predictor}
+\underline{focus on how to predict analysis cost, rather than why need to make
+the prediction}
+
+\underline{an updated technique modelling diagram showing implementation has
+cost and precision predictor}
+%----------------------------------------------------------------------
+\section{Techniques Determination}
+\label{sec:Techniques Determination}
+In section~\ref{sec:Precision Predictor}, we discussed Precision
+Predictor component in our Framework. The Precision Predictor component provides
+valuable precision prediction for researchers or test engineers to compare one
+technique over another.  However, it's likely that precision is not the only metric to
+determine a test selection technique as technique with lower precision value
+(ie. less percentage of test cases selected from original test suite) is not
+always a better technique. To identify what is a better technique, initially
+researchers have proposed analytical approaches to access several attributes
+of techniques and compare techniques\cite{DBLP:journals/tse/RothermelH96}.
+\begin{description}
+\item[Precision] measures the extent to which a technique select
+test cases that are non-modification-revealing.
+\item[Inclusiveness] measures the extent to which a technique
+omits tests in $T$ that reveal faults in a modified program. a 100 percent
+inclusive technique is safe.
+\item[Efficiency] measures the space and time requirements of a
+technique.
+\item[Generality] measures the ability of a technique to function in a practical
+and sufficiently wide range of situations.
+\end{description} 
+
+\underline{Q:These factors are good to consider when evaluate STS techniques
+post-mortem. Can we actually use them prior to regression test? Can we use
+evaluation results from previous experiments/history values?}%
+These attributes help to compare the strength and weakness of techniques in
+general, however it's a qualitative analysis rather than quantitative. Our work
+goes beyond goal-based STS techniques by allowing researchers and test
+engineers to use a utility function to determine which technique to use for the
+application under test. Our utility function incorporate the attributes
+mentioned about and produce one single utility value.
+
+Utility is a value that represents the desirability of a particular state or
+outcome.\underline{need a better reference to utility here}
+%\href{http://www.pdl.cmu.edu/PDL-FTP/Storage/CMU-PDL-08-102.pdf}{utility function section 1.1.3}
+The utility function provides the ability to collapse
+multiple objectives into a a single axis that can be used to compare with all
+candidate STS techniques.Using utility, both the cost and benefits of each STS
+technique can be examined in a single framework. Using utility function also
+allows an automated optimization system to properly balance cost and benefits of each STS
+techniques.
+
+Ultimate goal of any selection is to find a technique gives the highest
+benefits with lowest cost. Our utility function predicts cost-benefit on each candidate
+techniques based on the output from Precision Predictor and Cost Predictor. Our
+utility function is based on cost model presented in 
+\cite{DBLP:conf/sigsoft/DoR06} but it's different from it in  
+\begin{itemize}
+  \item Our Utility Function is applied prior to test selection and test
+  execution phase, while D-R cost model is applied after test
+  execution phase for post-mortem analysis
+  \item Utility value calculated from Utility Function does not represent cost
+  in dollar amount. The utility value does not have a measurement unit. It's
+  just a single value to compare one technique to another. D-R cost model does
+  represent cost in dollars, therefore it requires additional parameters like
+  organization's revenue in dollars per time unit, average hourly salary
+  associated with employing a programmer per unit of time. Additional cost
+  parameters in D-R cost model requires estimation inputs from
+  each organization/teams and makes it more complex then our Utility Function.
+  \item Cost components constant to any STS techniques are not included in our
+  Utility Function as they do not contribute any difference in comparing STS
+  techniques. This further simplifies our Utility Function. 
+\end{itemize} 
+
+\underline{describe cost model}
+\subsection{Cost Components}\label{sec:cost_components}
+In the following section, we describe cost components proposed in
+D-R cost model\cite{DBLP:conf/sigsoft/DoR06} with emphasis on
+which components are included in the Utility Function and how these components
+are included. A summary of all cost components in relation to our Utility
+Function is listed in table \ref{}. Methods for measuring or estimating these
+components in our framework implementation are described in more details in
+section~ref{chap:Empirical Evaluations}.
+\begin{description}
+\item[Test Setup]($CS$). $CS$ includes cost of activities
+required to prepare to run tests.This includes costs of setting up test environments,
+configuring test drivers and test simulators. This cost is necessary to execute
+the test suite regardless if entire test suite is selected or only one test
+case is selected. $CS$ is not dependent on selection technique,
+therefore it's not included in the Utility Function.
+\item[Identifying obsolete test case]($CO_i$). $CO_i$ represents
+cost to determine which test cases are still applicable to a new version of the
+program. Similar to $CS$, this cost is necessary to execute
+the test suite regardless if entire test suite is selected or only one test
+case is selected. $CO_i$ is not dependent on selection technique,
+therefore it's not included in the Utility Function.
+\item[Repairing obsolete test cases]($CO_r$). $CO_r$ represents
+cost to repair obsolete test cases for reuse.$CO_r$ is necessary to
+execute the test suite regardless if entire test suite is selected or only one
+test case is selected. $CO_r$ is not dependent on selection technique,
+therefore it's not included in the Utility Function.
+\item[Supporting analysis]($CA$). $CA$ represents the cost of
+analysis needed to support a STS technique. $CA$ includes cost of
+instrumenting code, analyzing changes and collecting test execution traces. In
+our Utility Function, this is the predicated analysis cost. As described in
+section ref{sec:Cost Predictor}, each unique STS technique in the framework
+implements a Cost Predictor to predicate $CA$ value.
+\item[Regression testing technique execution]($CR$). $CR$ represents the cost of
+applying a STS technique after analysis has been completed. Each unique STS technique in the framework implements a Cost
+Predictor to predicate $CR$ value.
+\item[Test execution]($CE$). $CE$ represents the cost of executing
+all selected test cases. this includes human and machine costs for all manual,
+automatic , or semi-automatic test cases. $CE$ is dependent on the number
+of test cases selected for regression. If the run time of each test case is
+uniformed in a test suite, $CE$ cost is less when less number of
+test cases is selected. In our Utility Function, we make simplifying assumption
+that each test in the test suite has equal run time. We use $CE_avg$
+denotes average execution cost of each test case. 
+\item[Test result validation]($CV_d and CV_i$). $CV_d and CV_i$ represent the
+cost of checking test results to determine whether or not test case reveal failures. $CV_d$ is the cost of comparing test results
+automatically, $CV_i$ is the cost of comparing test results
+manually. $CV_d and CV_i$ are dependent on the number of test cases
+selected. In our Utility Function, we make simplifying assumption that each test
+in the test suite has equal test result validation time. We use $CV_avg$
+denotes average test result validation time for each test. $CV_avg$
+includes both manual and automated result validation time.
+\item[Missing faults]($CF$). $CF$ represents the cost of missing
+faults. This includes the costs of missing fault that the test suite could have
+detected if executed in full, but missed due to omission of some test cases. If
+the STS technique is a safe technique, we do not count $CF$ in the
+Utility Function. \underline{really?what is a safe technique}
+\item[Delayed fault detection feedback]($CD$). $CD$ is the cost
+of delaying product release due to late discovered faults. As a simple example,
+if bug fixing cycle is two days but a fault is found one day before scheduled
+release time, the release has to be delayed for at least one day in order to
+take a new build with the fix of that late discovered fault. This cost could occur
+when fault revealing test cases were executed too late in the testing cycle and
+high $CD$ cost indicates a test case prioritization issue. Clearly,
+$CD$ is dependent on execution orders of the test cases but not dependent
+on STS techniques. Test cases selected by the same STS technique could be
+executed in an optimized order to incur zero or low $CD$ cost or in an
+un-optimized order to incur high $CD$ cost. Therefore, the Utility
+Function in our framework do not consider $CD$ cost component.
+\end{description}
+\underline{discuss which cost in which phase} Recall in section~ref{sec:???}, we
+discussed testing phases. 
+
+%\input{chapters/chapter6/tables/Summary_of_Cost_Component}
+
+Table~\ref{tab:Summary_of_Cost_Components} summarizes cost components in D-R
+cost model and cost components considered in our Utility Function.
+\underline{describe more about the table for each column and abbreviation if
+not clear}
+
+
+\pagebreak
+
+\subsection{Utility Function}\label{Utility_function}
+The utility function is ultimately a simplified cost model to perform cost
+benefit analysis prior to test selection and after test selection. Before we
+discuss Utility Function, we define several parameters and coefficients that are
+used in the Utility Function, most of which instantiated cost components outlined in section~\ref{sec:cost_components}. Assume we have a candidate list of STS techniques $M_1$,$M_2$,\ldots,$M_k$, $n$ versions of
+programs $P$ and $n$ versions of test suite $T$ (one per version of program P).
+Set of test cases selected by technique $M$ denoted $T_m$.
+\begin{itemize}
+  \item $i$ is an index denoting a particular version $P_i$ of $P$.
+  \item $k$ is an index denoting a particular technique $M_k$ of $M$.
+  \item $CA_{in}(i)$ is the cost of instrument all units in $P_i$.
+  \item $CA_{tr}(i)$ is the cost of collecting traces for test cases in
+  $T_{i-1}$ over $P_{i-1}$ 
+  \item $CR(i)$ is the cost of applying test selection technique $M_i$
+  \item $CE_{avg}(i)$ is the average execution cost of one test case in $T_i$
+  \item $CV_{avg}(i)$ is the average test result validation cost of one test
+  case, including automated and manual tests
+  \item $CF$ is the cost of missing faults that the regression test suite
+  could have detected if executed in full.
+  \item $\theta_c$ ratio of cost in regression phase(critical phase) over
+  pre-regression phase (preliminary phase)
+  \item $\theta_p$ ratio of cost in post-release phase over pre-regression phase
+  (preliminary phase)
+   
+\end{itemize}
+
+The two equations that comprise our Utility Function are as follows: 
+$$ Cost = \sum_{i=2}^{n}(CA_{in}(i)+CA_{tr}(i)+CR(i)+CF(i)*\theta_p)$$ 
+$$ Benefit = \sum_{i=2}^n((|T(i)|-|Tm(i)|)*(CE_{avg}(i)+CV_{avg}(i))*\theta_c)$$
+
+Utility Function $$ \digamma = Benefit - Cost $$
+
+The Utility Function is applied  twice in the framework,once in Proposing Selection Technique phase, once in EValation
+phase. In the Proposing Selection Technique phase, the Utility Function is
+applied to all candidate STS techniques and utility values are calculated.
+Technique with the highest utility value is proposed. In Evaluation phase,  the
+Utility Function is once again applied to all candidate STS techniques and
+utility values are re-calculated. The proposed technique is evaluated against
+technique with the highest actual utility value.
+
+One of the assumptions we made in the utility function above is that
+every test case selected will always be executed. This may not be true in some
+situations especially in organizations with separate test teams and development
+teams.A new version of the program could be kicked off by development team while test team has not yet finished execution of the
+selected test set $T_m$ on current version. In this case, test team has
+several choices based on organization's processes and the utility function can
+be applied with some modifications discussed below.
+\begin{itemize}
+  \item continue to execute the remaining test cases on the current
+  version and ignore the new version until all tests are completed. In
+  this case, the utility function can be used without any modification.
+  \item stop test execution on current version. Reselect test cases based on the
+  new version and execute the newly selected test cases on new version. In this
+  case,test team essentially performed a unsafe test selection on current
+  version. All test cases executed so far against the current version
+  are selected;all remaining test cases in the test suite are considered
+  discarded. We can adjust the cost component in the utility function so that
+  $T_m$ is the set of test cases executed on current version;$CF$ is the
+  cost of missing faults due to omitting remaining test cases.
+  \item execute the remaining test cases on the new version without reapplying
+  test selection technique. In this case, $n$ no longer represents number of
+  program versions as test selection is not perform on each every program
+  version. Instead, $n$ represents number of times test selection was performed
+  in a release. $i$ becomes an index denoting a particular test selection performed over a program version. 
+\end{itemize}
+
+
+\subsection{estimation of utility parameters}
+In this section, we discuss in more details how to estimate/measure each
+parameters in the Utility Function and challenges around estimation and
+measurement in practice. As the utility function is applied twice in the
+framework , once in Proposing Selection Technique phase, once in Evaluation
+phase, some parameters in the utility function are estimated/measured twice as
+well. 
+
+\begin{itemize}
+  \item $i$ is an index denoting a particular version $P_i$ of $P$. This seems
+  to be always known in any research experiments but this may not be known in
+  practice at technique determination time. 
+  \item $k$ is an index denoting a particular technique $M_k$ of $M$. This is
+  the number of technique implemented in the framework and this is a known fact.
+  \item $CA_{in}(i)$ is the cost of instrument all units in $P_i$.
+  \item $CA_{tr}(i)$ is the cost of collecting traces for test cases in
+  $T_{i-1}$ over $P_{i-1}$ 
+  \item $CR(i)$ is the cost of applying test selection technique $M_i$
+  \item $CE_{avg}(i)$ is the average execution cost of one test case in $T_i$
+  \item $CV_{avg}(i)$ is the average test result validation cost of one test
+  case, including automated and manual tests
+  \item $CF$ is the cost of missing faults that the regression test suite
+  could have detected if executed in full.
+  \item $\theta_c$ ratio of cost in regression phase(critical phase) over
+  pre-regression phase (preliminary phase)
+  \item $\theta_p$ ratio of cost in post-release phase over pre-regression phase
+  (preliminary phase)
+\end{itemize}
+
+
+\subsection{When do you want to disable cost model in our framework}
+In previous sections, we describe a cost model which is the base of the utility
+function in our framework and provided some guidelines about estimation and measurement of the parameters
+in the utility function. Later in chapter \ref{chap:Empirical Evaluations}, we
+will discuss values of these parameters used in our empirical evaluations.
+However, for test practitioners to use the framework in the industry, we
+propose disable the utility function in the framework. In the
+following section, we will elaborate our reasons.
+
+In practice, even a simplified cost model as we described in
+section~\ref{Utility_function} can not be put into use in a single step. It must
+be refined and improved iteratively over time. For example, the COCOMO
+model \cite{boehm2000software} has gone through several calibration and
+evaluation steps, and it took 15 years over 63 projects to improve model's
+accuracy. Years of calibration and evaluation is a significant investment for
+any organization. Cost model calibration requires estimating the parameters and applying the model at technique determination phase, then tracking and calculating the actual values at evaluation phase for every projects within the organization. 
+This would be a significant overhead to the product development and testing and
+it could be the major road block in integrating software test selection into testing
+processes.From overall cost-effective point of view, there may not be any
+benefit until an effective cost model is built.
+Also as software development practice and software product evolves so rapidly in the industry, history data collected in previous
+project may become obsolete in just number of years to even a few months. Few
+companies would be able to afford 15 years to fine tune a cost model.In the end, the return of building an accurate cost model
+to determine the ``best'' test selection technique may not even cover the cost
+of years of calibration and evaluation. Confronting between dilemma of building
+an accurate cost model to determine the ``best'' technique or estimating a
+``good'' technique to apply to right away, many organization in the industry
+would choose the latter. 
+
+In general, building the utility function for an organization requires 
+expert knowledge in cost modelling, manual efforts to collect and enter
+parameters, and significant cost to get it right. Since one of the major challenges for industry to adopt test selection techniques is lack of
+user friendly tools\cite{4659253}, we suggest organizations disabling
+the utility function in the framework, so that the framework becomes an automated and easy to use tool with
+low setup cost and minimum manual intervention. After organizations pass the
+initial hurdles and adopt the automated test selection practice, they may enable
+the utility function to get greater benefits from test selection techniques.
+
+ 
+Organizations may decided not to fix a bug in a particular release (i.e add the bug into a known issue list) but it makes no sense not to discover a bug in
+testing phase. therefore, from practically point of view, test teams would
+lalways favour on safe techniques over unsafe technique. 
+
+
+  
+%----------------------------------------------------------------------
+% END MATERIAL
+%----------------------------------------------------------------------
+% B I B L I O G R A P H Y
+% -----------------------
+
+% The following statement selects the style to use for references.  It controls the sort order of the entries in the bibliography and also the formatting for the in-text labels.
+%\bibliographystyle{plain}
+% This specifies the location of the file containing the bibliographic information.  
+% It assumes you're using BibTeX (if not, why not?).
+%\bibliography{../../bib/thesis}
+% The following statement causes the title "References" to be used for the biliography section:
+%\renewcommand{\bibname}{References}
+%\addcontentsline{toc}{chapter}{\textbf{References}}
+% Tip 5: You can create multiple .bib files to organize your references. 
+% Just list them all in the \bibliogaphy command, separated by commas (no spaces).
+
+% The following statement causes the specified references to be added to the bibliography% even if they were not 
+% cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
+%\nocite{*}
+
+
+

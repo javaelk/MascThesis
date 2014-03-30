@@ -1,0 +1,328 @@
+\begin{thebibliography}{10}
+
+\bibitem{DBLP:conf/re/2006}
+{\em 14th IEEE International Conference on Requirements Engineering (RE 2006),
+  11-15 September 2006, Minneapolis/St.Paul, Minnesota, USA}. IEEE Computer
+  Society, 2006.
+
+\bibitem{DBLP:conf/kbse/2009}
+{\em ASE 2009, 24th IEEE/ACM International Conference on Automated Software
+  Engineering, Auckland, New Zealand, November 16-20, 2009}. IEEE Computer
+  Society, 2009.
+
+\bibitem{DBLP:conf/re/2010}
+{\em RE 2010, 18th IEEE International Requirements Engineering Conference,
+  Sydney, New South Wales, Australia, September 27 - October 1, 2010}. IEEE
+  Computer Society, 2010.
+
+\bibitem{DBLP:conf/issre/ArafeenD11}
+Md.~Junaid Arafeen and Hyunsook Do.
+\newblock Adaptive regression testing strategy: An empirical study.
+\newblock In Dohi and Cukic \cite{DBLP:conf/issre/2011}, pages 130--139.
+
+\bibitem{DBLP:conf/compsac/BeydedaG01}
+Sami Beydeda and Volker Gruhn.
+\newblock Integrating white- and black-box techniques for class-level
+  regression testing.
+\newblock In {\em COMPSAC}, pages 357--362, 2001.
+
+\bibitem{DBLP:journals/tosem/BibleRR01}
+John Bible, Gregg Rothermel, and David~S. Rosenblum.
+\newblock A comparative study of coarse- and fine-grained safe regression
+  test-selection techniques.
+\newblock {\em ACM Trans. Softw. Eng. Methodol.}, 10(2):149--183, 2001.
+
+\bibitem{boehm2000software}
+B.W. Boehm.
+\newblock {\em Software cost estimation with Cocomo II}.
+\newblock Number v. 1 in Software Cost Estimation with Cocomo II. Prentice
+  Hall, 2000.
+
+\bibitem{DBLP:journals/infsof/BriandLH09}
+Lionel~C. Briand, Yvan Labiche, and S.~He.
+\newblock Automating regression test selection based on uml designs.
+\newblock {\em Information {\&} Software Technology}, 51(1):16--30, 2009.
+
+\bibitem{DBLP:conf/icsm/BriandLS02}
+Lionel~C. Briand, Yvan Labiche, and G.~Soccar.
+\newblock Automating impact analysis and regression test selection based on uml
+  designs.
+\newblock In {\em ICSM}, pages 252--261, 2002.
+
+\bibitem{DBLP:conf/icse/ChenRV94}
+Yih-Farn Chen, David~S. Rosenblum, and Kiem-Phong Vo.
+\newblock Testtube: A system for selective regression testing.
+\newblock In {\em ICSE}, pages 211--220, 1994.
+
+\bibitem{Chung:2000}
+L.~Chung, B.~A. Nixon, E.~Yu, and J.~Mylopoulos.
+\newblock {\em Non-Functional Requirements in Software Engineering}, pages
+  15--71.
+\newblock Kluwer Academic Publishing, first edition, 2000.
+
+\bibitem{5482587}
+H.~Do, S.~Mirarab, L.~Tahvildari, and G.~Rothermel.
+\newblock The effects of time constraints on test case prioritization: A series
+  of controlled experiments.
+\newblock {\em Software Engineering, IEEE Transactions on}, PP(99):1 --1, 2010.
+
+\bibitem{DBLP:journals/ese/DoER05}
+Hyunsook Do, Sebastian~G. Elbaum, and Gregg Rothermel.
+\newblock Supporting controlled experimentation with testing techniques: An
+  infrastructure and its potential impact.
+\newblock {\em Empirical Software Engineering}, 10(4):405--435, 2005.
+
+\bibitem{DBLP:conf/sigsoft/DoMTR08}
+Hyunsook Do, Siavash Mirarab, Ladan Tahvildari, and Gregg Rothermel.
+\newblock An empirical study of the effect of time constraints on the
+  cost-benefits of regression testing.
+\newblock In {\em SIGSOFT FSE}, pages 71--82, 2008.
+
+\bibitem{DBLP:conf/icsm/DoR05}
+Hyunsook Do and Gregg Rothermel.
+\newblock A controlled experiment assessing test case prioritization techniques
+  via mutation faults.
+\newblock In {\em ICSM}, pages 411--420, 2005.
+
+\bibitem{DBLP:conf/sigsoft/DoR06}
+Hyunsook Do and Gregg Rothermel.
+\newblock An empirical study of regression testing techniques incorporating
+  context and lifetime factors and improved cost-benefit models.
+\newblock In {\em SIGSOFT FSE}, pages 141--151, 2006.
+
+\bibitem{DBLP:journals/tse/DoR06}
+Hyunsook Do and Gregg Rothermel.
+\newblock On the use of mutation faults in empirical assessments of test case
+  prioritization techniques.
+\newblock {\em IEEE Trans. Software Eng.}, 32(9):733--752, 2006.
+
+\bibitem{DBLP:conf/issta/DoR08}
+Hyunsook Do and Gregg Rothermel.
+\newblock Using sensitivity analysis to create simplified economic models for
+  regression testing.
+\newblock In {\em ISSTA}, pages 51--62, 2008.
+
+\bibitem{DBLP:journals/ese/DoRK06}
+Hyunsook Do, Gregg Rothermel, and Alex Kinneer.
+\newblock Prioritizing junit test cases: An empirical assessment and
+  cost-benefits analysis.
+\newblock {\em Empirical Software Engineering}, 11(1):33--70, 2006.
+
+\bibitem{DBLP:conf/issre/2011}
+Tadashi Dohi and Bojan Cukic, editors.
+\newblock {\em IEEE 22nd International Symposium on Software Reliability
+  Engineering, ISSRE 2011, Hiroshima, Japan, November 29 - December 2, 2011}.
+  IEEE, 2011.
+
+\bibitem{DBLP:journals/stvr/ElbaumKMRK03}
+Sebastian~G. Elbaum, Praveen Kallakuri, Alexey~G. Malishevsky, Gregg Rothermel,
+  and Satya Kanduri.
+\newblock Understanding the effects of changes on the cost-effectiveness of
+  regression testing techniques.
+\newblock {\em Softw. Test., Verif. Reliab.}, 13(2):65--83, 2003.
+
+\bibitem{DBLP:journals/tse/ElbaumMR02}
+Sebastian~G. Elbaum, Alexey~G. Malishevsky, and Gregg Rothermel.
+\newblock Test case prioritization: A family of empirical studies.
+\newblock {\em IEEE Trans. Software Eng.}, 28(2):159--182, 2002.
+
+\bibitem{DBLP:journals/sqj/ElbaumRKM04}
+Sebastian~G. Elbaum, Gregg Rothermel, Satya Kanduri, and Alexey~G. Malishevsky.
+\newblock Selecting a cost-effective test case prioritization technique.
+\newblock {\em Software Quality Journal}, 12(3):185--210, 2004.
+
+\bibitem{Ernst:2006:VNR:1173697.1174072}
+Neil~A. Ernst, Yijun Yu, and John Mylopoulos.
+\newblock Visualizing non-functional requirements.
+\newblock In {\em Proceedings of the 1st international workshop on Requirements
+  Engineering Visualization}, pages 2--, Washington, DC, USA, 2006. IEEE
+  Computer Society.
+
+\bibitem{DBLP:conf/er/GiorginiMNS02}
+Paolo Giorgini, John Mylopoulos, Eleonora Nicchiarelli, and Roberto Sebastiani.
+\newblock Reasoning with goal models.
+\newblock In Spaccapietra et~al. \cite{DBLP:conf/er/2002}, pages 167--181.
+
+\bibitem{DBLP:conf/icse/GravesHKPR98}
+Todd~L. Graves, Mary~Jean Harrold, Jung-Min Kim, Adam~A. Porter, and Gregg
+  Rothermel.
+\newblock An empirical study of regression test selection techniques.
+\newblock In {\em ICSE}, pages 188--197, 1998.
+
+\bibitem{DBLP:journals/tosem/GravesHKPR01}
+Todd~L. Graves, Mary~Jean Harrold, Jung-Min Kim, Adam~A. Porter, and Gregg
+  Rothermel.
+\newblock An empirical study of regression test selection techiques.
+\newblock {\em ACM Trans. Softw. Eng. Methodol.}, 10(2):184--208, 2001.
+
+\bibitem{DBLP:conf/oopsla/HarroldJLLOPSSG01}
+Mary~Jean Harrold, James~A. Jones, Tongyu Li, Donglin Liang, Alessandro Orso,
+  Maikel Pennings, Saurabh Sinha, S.~Alexander Spoon, and Ashish Gujarathi.
+\newblock Regression test selection for java software.
+\newblock In {\em OOPSLA}, pages 312--326, 2001.
+
+\bibitem{DBLP:journals/tse/HarroldRRW01}
+Mary~Jean Harrold, David~S. Rosenblum, Gregg Rothermel, and Elaine~J. Weyuker.
+\newblock Empirical studies of a prediction model for regression test
+  selection.
+\newblock {\em IEEE Trans. Software Eng.}, 27(3):248--263, 2001.
+
+\bibitem{4659253}
+M.J. Harrold and A.~Orso.
+\newblock Retesting software during development and maintenance.
+\newblock In {\em Frontiers of Software Maintenance, 2008. FoSM 2008.}, pages
+  99 --108, 28 2008-oct. 4 2008.
+
+\bibitem{DBLP:conf/esem/KasurinenTS10}
+Jussi Kasurinen, Ossi Taipale, and Kari Smolander.
+\newblock Test case selection and prioritization: risk-based or design-based?
+\newblock In {\em ESEM}, 2010.
+
+\bibitem{DBLP:conf/re/LiaskosLYYM06}
+Sotirios Liaskos, Alexei Lapouchnian, Yijun Yu, Eric S.~K. Yu, and John
+  Mylopoulos.
+\newblock On goal-based variability acquisition and analysis.
+\newblock In {\em RE\/} \cite{DBLP:conf/re/2006}, pages 76--85.
+
+\bibitem{DBLP:conf/kbse/LiaskosMM09}
+Sotirios Liaskos, Sheila~A. McIlraith, and John Mylopoulos.
+\newblock Towards augmenting requirements models with preferences.
+\newblock In {\em ASE\/} \cite{DBLP:conf/kbse/2009}, pages 565--569.
+
+\bibitem{DBLP:conf/re/LiaskosMSM10}
+Sotirios Liaskos, Sheila~A. McIlraith, Shirin Sohrabi, and John Mylopoulos.
+\newblock Integrating preferences into goal models for requirements
+  engineering.
+\newblock In {\em RE\/} \cite{DBLP:conf/re/2010}, pages 135--144.
+
+\bibitem{DBLP:conf/csmr/2011}
+Tom Mens, Yiannis Kanellopoulos, and Andreas Winter, editors.
+\newblock {\em 15th European Conference on Software Maintenance and
+  Reengineering, CSMR 2011, 1-4 March 2011, Oldenburg, Germany}. IEEE Computer
+  Society, 2011.
+
+\bibitem{DBLP:conf/sigsoft/OrsoSH04}
+Alessandro Orso, Nanjuan Shi, and Mary~Jean Harrold.
+\newblock Scaling regression testing to large software systems.
+\newblock In {\em SIGSOFT FSE}, pages 241--251, 2004.
+
+\bibitem{DBLP:journals/smr/RajaHH09}
+Uzma Raja, David~P. Hale, and Joanne~E. Hale.
+\newblock Modeling software evolution defects: a time series approach.
+\newblock {\em Journal of Software Maintenance}, 21(1):49--71, 2009.
+
+\bibitem{DBLP:journals/tse/RosenblumW97}
+David~S. Rosenblum and Elaine~J. Weyuker.
+\newblock Using coverage information to predict the cost-effectiveness of
+  regression testing strategies.
+\newblock {\em IEEE Trans. Software Eng.}, 23(3):146--156, 1997.
+
+\bibitem{DBLP:conf/icse/RothermelEMKD02}
+Gregg Rothermel, Sebastian~G. Elbaum, Alexey~G. Malishevsky, Praveen Kallakuri,
+  and Brian Davia.
+\newblock The impact of test suite granularity on the cost-effectiveness of
+  regression testing.
+\newblock In {\em ICSE}, pages 130--140, 2002.
+
+\bibitem{DBLP:conf/icsm/RothermelH93}
+Gregg Rothermel and Mary~Jean Harrold.
+\newblock A safe, efficient algorithm for regression test selection.
+\newblock In {\em ICSM}, pages 358--367, 1993.
+
+\bibitem{DBLP:conf/issta/RothermelH94}
+Gregg Rothermel and Mary~Jean Harrold.
+\newblock Selecting tests and identifying test coverage requirements for
+  modified software.
+\newblock In {\em ISSTA}, pages 169--184, 1994.
+
+\bibitem{DBLP:journals/tse/RothermelH96}
+Gregg Rothermel and Mary~Jean Harrold.
+\newblock Analyzing regression test selection techniques.
+\newblock {\em IEEE Trans. Software Eng.}, 22(8):529--551, 1996.
+
+\bibitem{DBLP:journals/tosem/RothermelH97}
+Gregg Rothermel and Mary~Jean Harrold.
+\newblock A safe, efficient regression test selection technique.
+\newblock {\em ACM Trans. Softw. Eng. Methodol.}, 6(2):173--210, 1997.
+
+\bibitem{DBLP:journals/tse/RothermelH98}
+Gregg Rothermel and Mary~Jean Harrold.
+\newblock Empirical studies of a safe regression test selection technique.
+\newblock {\em IEEE Trans. Software Eng.}, 24(6):401--419, 1998.
+
+\bibitem{DBLP:journals/stvr/RothermelHD00}
+Gregg Rothermel, Mary~Jean Harrold, and Jeinay Dedhia.
+\newblock Regression test selection for c++ software.
+\newblock {\em Softw. Test., Verif. Reliab.}, 10(2):77--109, 2000.
+
+\bibitem{DBLP:journals/tse/RothermelUCH01}
+Gregg Rothermel, Roland~H. Untch, Chengyun Chu, and Mary~Jean Harrold.
+\newblock Prioritizing test cases for regression testing.
+\newblock {\em IEEE Trans. Software Eng.}, 27(10):929--948, 2001.
+
+\bibitem{DBLP:conf/csmr/SalehieLTDLM11}
+Mazeiar Salehie, Sen Li, Ladan Tahvildari, Rozita Dara, Shimin Li, and Mark
+  Moore.
+\newblock Prioritizing requirements-based regression test cases: A goal-driven
+  practice.
+\newblock In Mens et~al. \cite{DBLP:conf/csmr/2011}, pages 329--332.
+
+\bibitem{DBLP:conf/er/2002}
+Stefano Spaccapietra, Salvatore~T. March, and Yahiko Kambayashi, editors.
+\newblock {\em Conceptual Modeling - ER 2002, 21st International Conference on
+  Conceptual Modeling, Tampere, Finland, October 7-11, 2002, Proceedings},
+  volume 2503 of {\em Lecture Notes in Computer Science}. Springer, 2002.
+
+\bibitem{DBLP:conf/wcre/TahvildariKM01}
+Ladan Tahvildari, Kostas Kontogiannis, and John Mylopoulos.
+\newblock Requirements-driven software re-engineering framework.
+\newblock In {\em WCRE}, pages 71--80, 2001.
+
+\bibitem{DBLP:journals/jss/TahvildariKM03}
+Ladan Tahvildari, Kostas Kontogiannis, and John Mylopoulos.
+\newblock Quality-driven software re-engineering.
+\newblock {\em Journal of Systems and Software}, 66(3):225--239, 2003.
+
+\bibitem{Tahvildari:2003:QSR:860127.860132}
+Ladan Tahvildari, Kostas Kontogiannis, and John Mylopoulos.
+\newblock Quality-driven software re-engineering.
+\newblock {\em J. Syst. Softw.}, 66:225--239, June 2003.
+
+\bibitem{Vokolos:1997:PRT:270193.270196}
+F.~I. Vokolos and P.~G. Frankl.
+\newblock Pythia: A regression test selection tool based on textual
+  differencing.
+\newblock In {\em IFIP TC5 WG5.4 3rd Internatinal Conference on on Reliability,
+  Quality and Safety of Software-intensive Systems}, ENCRESS '97, pages 3--21,
+  London, UK, UK, 1997. Chapman \& Hall, Ltd.
+
+\bibitem{DBLP:conf/icsm/VokolosF98}
+Filippos~I. Vokolos and Phyllis~G. Frankl.
+\newblock Empirical evaluation of the textual differencing regression testing
+  technique.
+\newblock In {\em ICSM}, pages 44--53, 1998.
+
+\bibitem{DBLP:journals/smr/WhiteJRR08}
+Lee~J. White, Khaled Jaber, Brian Robinson, and V{\'a}clav Rajlich.
+\newblock Extended firewall for regression testing: an experience report.
+\newblock {\em Journal of Software Maintenance}, 20(6):419--433, 2008.
+
+\bibitem{DBLP:conf/icst/WikstrandFGZW09}
+Greger Wikstrand, Robert Feldt, Jeevan~Kumar Gorantla, Wang Zhe, and Conor
+  White.
+\newblock Dynamic regression test selection based on a file cache.
+\newblock In {\em ICST}, pages 299--302, 2009.
+
+\bibitem{Yoo:2010}
+S.~Yoo and M.~Harman.
+\newblock Regression testing minimization, selection and prioritization: a
+  survey.
+\newblock {\em Software Testing, Verification \& Reliability}, 2010.
+
+\bibitem{DBLP:conf/icse/YuM94}
+Eric S.~K. Yu and John Mylopoulos.
+\newblock Understanding "why" in software process modelling, analysis, and
+  design.
+\newblock In {\em ICSE}, pages 159--168, 1994.
+
+\end{thebibliography}

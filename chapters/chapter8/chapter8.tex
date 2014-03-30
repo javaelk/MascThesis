@@ -1,0 +1,265 @@
+% UW Thesis Template for LaTeX 
+% Last Updated July 8, 2009 by Stephen Carr, IST Client Services
+% FOR ASSISTANCE, please send mail to rt-IST-CSmathsci@ist.uwaterloo.ca
+
+% Effective October 2006, the University of Waterloo 
+% requires electronic thesis submission. See the UW thesis regulations at
+% http://www.grad.uwaterloo.ca/Thesis_Regs/thesistofc.asp.
+% However, many faculties/departments also require one or more printed
+% copies. This template attempts to satisfy requirements for both types of output. 
+% It is based on the standard "report" document class. The "book" document 
+% class can be substituted if you have a very large, multi-part thesis.
+
+% DISCLAIMER
+% To the best of our knowledge, this template satisfies the current UW requirements.
+% However, it is your responsibility to assure that you have met all 
+% requirements of the University and your particular department.
+% Many thanks to Colin Alie for assistance in preparing this updated template.
+
+% -----------------------------------------------------------------------
+
+% By default, output is produced that is geared toward generating a PDF 
+% version optimized for viewing on an electronic display, including 
+% hyperlinks within the PDF.
+ 
+% E.g. to process a thesis called "mythesis.tex" based on this template, run:
+
+% pdflatex mythesis	-- first pass of the pdflatex processor
+% bibtex mythesis	-- generates bibliography from .bib data file(s) 
+% pdflatex mythesis	-- fixes cross-references, bibliographic references, etc
+% pdflatex mythesis	-- fixes cross-references, bibliographic references, etc
+
+% If you use the recommended LaTeX editor, Texmaker, you would open the mythesis.tex
+% file, then click the pdflatex button. Then run BibTeX (under the Tools menu).
+% Then click the pdflatex button two more times. If you have an index as well,
+% you'll need to run MakeIndex from the Tools menu as well, before running pdflatex
+% the last two times.
+
+% N.B. The "pdftex" program allows graphics in the following formats to be
+% included with the "\includegraphics" command: PNG, PDF, JPEG, TIFF
+% Tip 1: Generate your figures and photos in the size you want them to appear
+% in your thesis, rather than scaling them with \includegraphics options.
+% Tip 2: Any drawings you do should be in scalable vector graphic formats:
+% SVG, PNG, WMF, EPS and then converted to PNG or PDF, so they are scalable in
+% the final PDF as well.
+% Tip 3: Photographs should be cropped and compressed so as not to be too large.
+
+% To create a PDF output that is optimized for double-sided printing: 
+%
+% 1) comment-out the \documentclass statement in the preamble below, and
+% un-comment the second \documentclass line.
+%
+% 2) change the value assigned below to the boolean variable
+% "ElectronicVersion" from "true" to "false".
+
+% --------------------- Start of Document Preamble -----------------------
+
+% Specify the document class, default style attributes, and page dimensions
+% For hyperlinked PDF, suitable for viewing on a computer, use this:
+%----------------------------------------------------------------------
+% MAIN BODY
+%----------------------------------------------------------------------
+% Because this is a short document, and to reduce the number of files
+% needed for this template, the chapters are not separate
+% documents as suggested above, but you get the idea. If they were
+% separate documents, they would each start with the \chapter command, i.e, 
+% do not contain \documentclass or \begin{document} and \end{document} commands.
+%======================================================================
+\reversemarginpar
+\setlength{\marginparwidth}{2cm}
+\chapter{Empirical Evaluations}
+\label{chap:Empirical Evaluations}
+%======================================================================
+\newpage
+%----------------------------------------------------------------------
+\section{A Test Selection Framework}
+%----------------------------------------------------------------------
+
+\underline{talk about implementation of the framework}
+We have implemented 3 Test Selection techniques selected from literature.
+[Rothermel and Harrold 1994] technique requires following steps:
+1. CFG of the program- G. We utilize BCEL and FINDBUGS API to build CFG of each method of program p and p'. This is implmented in uw.star.sts.analysis package CFGFactory class . //TODO: more description about BCEL and FINDBUGS here..
+2. Code Instrumentation.  We use EMMA code coverage tool to collect code coverage information. We have modified test exeuction scripts so that an  Emma  XML report is produced after execution of each test case. We then parse the XML report to get code coverage of each method and each class of program p and p'. Due to limitation in Emma, we can not get branch trace and edge trace information. An edge trace is a trace matrix between edge(n1,n2) in G test case t in T.  A trace is set in the matrix if and only if , when P is executed with t, statements in basic block n1 and basic block n2 are executed sequentially at least once. Edge trace is repesented as a Trace object in uw.star.sts.artifact.Trace class. 
+We then investigate several code coverage and code analysis tools. the main goal
+is to collect code coverage information not in terms of how many statements were
+covered by execution of a test case, but which statements were covered . Many
+code coverage tools report accumulated statement coverage information only.
+(i.e. #of statements covered). We invetigated Emma,CodeCover,
+3.function TestOnEdge(n1,n2) - given an Edge from Basic Block n1 to Basic Block n2, this function returns all tests in T that traversed edge(n1,n2) in G.
+4.Intraprocedure SelectTests algorithm - 
+
+
+implmentation choice #2, [Vokolos,Fankl]
+2. code ocverage. build code coverage information in a Trace matrix between
+every test case and every statement in all source files. Statement is uniquely
+identified with sourcefileName.lineNumber. This is achieved by using CodeCover.
+
+Questions about codecover:
+what is a statement coverage? is it on source code statement or bytecode?
+
+How is Html report generated with colour coding? read from which input files?
+Answer: codecover has the statment in HTML file and coverage type. so I could
+just parse class and linenumber in html file
+<span class="covered fullyCovered
+Strict_Condition_Coverage">model.isFileModified(fileId)</span>
+
+In Emma - 
+Source lines containing executable code get the following color code:
+
+green for fully covered lines,
+yellow for partly covered lines (some instructions or branches missed) and
+red for lines that have not been executed at all.
+Lines without any executable code have no colour at all.
+
+a covered line has the following html code
+<tr class="c"><td
+class="l">88</td><td>&nbsp;&nbsp;&nbsp;static&nbsp;org.apache.log4j.Category&nbsp;cat&nbsp;=</td></tr>
+
+http://emma.sourceforge.net/coverage_sample_b/_files/5.html
+a partial covered line
+<tr class="p"><td class="l" title="8% line coverage (1 out of 13
+% instructions)"><a name="6">111</a></td><td title="8% line coverage (1 out of 13 instructions)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</td></tr>
+
+
+
+Can I parse the same input files in
+a different way to generage the code coverage matrix?
+ 
+
+\newpage
+
+\TODO{add diagram here goal-data-metrics-evaluation metrics etc. on whiteboard}
+\subsection{Identified test selection goals}
+
+\subsection{summary}
+Some selection goals and techniques are also come from the knowledge in the
+industry. As this framework is used in practice, test engineers can add
+additional goals and techniques to the catalogues in the framework. Knowledge
+and experience from wide range of industry settings can be recorded in the
+framework and made available for sharing. Test engineers and researcher would
+have access to selection goals and techniques beyond their immediate domain ,
+and can adapt them to meet the needs for particular domain or project.
+
+\subsection{Evaluation Criteria}
+Precision is the percentages of test cases selected from previous version for
+regression testing. Lower precision number indicates greater savings which is
+better.Since test cases new to this version are always need to be executed
+anyways,they are not counted in the precision calculation.Formally, we define
+precision p as (|T'|/|T|)*100 
+    T' - test cases selected from previous version (should not include new test
+   cases in this version) 
+   T - test cases in previous version
+
+In addition, some of the goals are ambigous or not granaluar enough. 
+\subsection{questions}
+The goal of the evaluation leads to the following questions:
+Does using the STS framework improve the probability of selecting the most
+appropriate techniques? 
+Does the additional cost of selecting technique make the test selection
+in-effective?
+\todo{compare against challenges}
+
+\subsection{quantitative analysis}
+
+\subsection{qualitative analysis}
+In our evaluation, all tests are junit test case which in average takes about
+1~2 seconds to run. The maximum test suite size among our evaluation test
+subjects is 500 test cases(jboss). Even if there were a STS technique selecting
+just one magic test case out of the entire test suite, the saving in time would
+no more than 16 minutes. This is calculated by 500 test cases * 2 seconds /60.
+It's unlikely to have a cost effective technique for Junit test suites of this
+size. Even if the technique is cost effective, the saving is not significant
+and the difference in savings between techniques is trivial.
+
+However, in industry settings, the size of the test suite, the average cost of
+executing a test case and the total number of version could be in completely
+different magnitude. For example, L White et al. conducted an experiement on a
+ABB properitory software.\cite{DBLP:journals/smr/WhiteJRR08} For version 1, 88
+test cases take 15.7 hours to run. The average test execution time is 642
+seconds, which is 300 times more than our evaluation test subjects.
+<todo:examples of number of versions and number of test cases as well.> 
+
+
+Also , as we discussed in <cost model>, regression test cost also consists of
+<some other cost factors, that is significantly higher than in our experiement
+settings>
+
+
+
+future works:
+
+SIR repository - 
+Folder struture problems:
+SIR repository is a collection of many test subjects and provides
+valuable data for research. However, the repository is created and maitentained
+manually and mostly for use manually. Those test subjects are organized in a
+predefined structure, they are not consisitent and accurate enough for program
+to use.  e.g. versions directory exist in some test subjects but not exist in
+others. compile class files sometimes placed under build/classes, sometime
+placed in build/ant/classes (various by versions). These difference between test
+subjects and between different versions of the same subject may be tolleranted
+by a human user, but will not be accepted by a automated program. 
+
+Test execution scripts problem
+in jmeter, verion5, test case org.apache.jmeter.protocol.http.sampler.PackageTest
+exist in test plan (v5.class.junit.universal.all file) but not in test
+exeuction script. (scriptR5.cls).
+Problems with SIR:
+Many test cases are missing from test execution scripts:jakata-jmeter
+classpath are set with hardcoded absolute path, should set with variables
+ 
+Missing debug information in compiled classes:
+In some test subjects, source code are already compiled but not compiled with
+full debug data ( ref java JFC) It's cruical for most of the
+analysis tools to have the full debug data in order to analyze the code
+coverage information. For example, for Emma to work, java progams have to be
+compiled with option debug='true' debuglevel = ``'' in ant.
+Missing debug data causes many additional time to recompile each version of the
+test subjects and to resolve compile issues of each version (due to depency
+libaries, deprecated methods etc.) Ideally, each test subject should be availabe
+to use without any knowledge about the test subject itself- in term of how to
+compile it. For propritery software, source code may not even avaiable to
+modify!
+
+code is written with old verions of J2SE (1.3)
+there are 51 instance of ``enum' used as a varialble name, while enum became a
+keyword since java 1.5. So manual updates are needed to change all 51 instance
+of enum to _enum in all 8 versions. This is extensive amount of manul work and
+this problem is exposed by previous problem (having to recompile). Had all test
+subjects are compiled with debug information, recompile & manul edit wouldn't
+have been necessary. 
+
+
+The framework requires a unified ALM tool to manage all artifacts in the SDLS
+and automaticallly maitain the traceability. This is largely a solved problem in
+the industry as there are many commerical ALM tool set avaiable. However, in the
+research community, commerical tool is either  too expensive or too heavy to
+use. Future work to consolidate all SIR test subjects to one light weight,
+free/open source ALM tool.
+
+
+Evaluation with industry data. 
+
+%----------------------------------------------------------------------
+% END MATERIAL
+%----------------------------------------------------------------------
+% B I B L I O G R A P H Y
+% -----------------------
+
+% The following statement selects the style to use for references.  It controls the sort order of the entries in the bibliography and also the formatting for the in-text labels.
+%\bibliographystyle{plain}
+% This specifies the location of the file containing the bibliographic information.  
+% It assumes you're using BibTeX (if not, why not?).
+%\bibliography{../../bib/thesis}
+% The following statement causes the title "References" to be used for the biliography section:
+%\renewcommand{\bibname}{References}
+%\addcontentsline{toc}{chapter}{\textbf{References}}
+% Tip 5: You can create multiple .bib files to organize your references. 
+% Just list them all in the \bibliogaphy command, separated by commas (no spaces).
+
+% The following statement causes the specified references to be added to the bibliography% even if they were not 
+% cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
+%\nocite{*}
+
+
+\end{document}

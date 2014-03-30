@@ -1,0 +1,31 @@
+\BOOKMARK [0][-]{section*.2}{List of Tables}{}% 1
+\BOOKMARK [0][-]{section*.4}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter.1}{introduction}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Releated Work}{}% 4
+\BOOKMARK [1][-]{section.2.1}{backgroud}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Code modification based techniques}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Cost Models}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{A surver of software test optimization goals}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.5}{Goal Modelling}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Introduction}{}% 10
+\BOOKMARK [0][-]{chapter.4}{3}{}% 11
+\BOOKMARK [1][-]{section.4.1}{ Constraint satisfaction problem}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{Design of Experiments}{chapter.4}% 13
+\BOOKMARK [0][-]{chapter.5}{Modelling Goals}{}% 14
+\BOOKMARK [1][-]{section.5.1}{Software Test Selection Goals}{chapter.5}% 15
+\BOOKMARK [2][-]{subsection.5.1.1}{Acquiring and cataloguing Software Test Selection goals}{section.5.1}% 16
+\BOOKMARK [2][-]{subsection.5.1.2}{Identified test selection goals}{section.5.1}% 17
+\BOOKMARK [2][-]{subsection.5.1.3}{summary}{section.5.1}% 18
+\BOOKMARK [0][-]{chapter.6}{Proposing Selection Techniques}{}% 19
+\BOOKMARK [1][-]{section.6.1}{Precision Predictor}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.2}{Cost Predictor}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.3}{Techniques Determination}{chapter.6}% 22
+\BOOKMARK [2][-]{subsection.6.3.1}{Cost Components}{section.6.3}% 23
+\BOOKMARK [2][-]{subsection.6.3.2}{Utility Function}{section.6.3}% 24
+\BOOKMARK [2][-]{subsection.6.3.3}{estimation of utility parameters}{section.6.3}% 25
+\BOOKMARK [2][-]{subsection.6.3.4}{When do you want to disable cost model in our framework}{section.6.3}% 26
+\BOOKMARK [0][-]{appendix*.7}{APPENDICES}{}% 27
+\BOOKMARK [0][-]{appendix.A}{PDF Plots From Matlab}{}% 28
+\BOOKMARK [1][-]{section.A.1}{Using the GUI}{appendix.A}% 29
+\BOOKMARK [1][-]{section.A.2}{From the Command Line}{appendix.A}% 30
+\BOOKMARK [0][-]{section*.8}{References}{}% 31

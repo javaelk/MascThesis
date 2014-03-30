@@ -1,0 +1,24 @@
+
+
+Artifacts modelling - look from two directions
+
+
+1. what is curernt available? ICSM papers
+2. If other software test selection/prioritization/reduction use this framework, would it be able to store/retrieve the artifacts required to perform the technique?
+
+
+Challenges:
+In industry, artifacts are mostly store in vaious software development tools. 
+
+Extract the artificat does not necessarily mean all information about the artifact is extracted. e.g. test cases are stored in folder structure. if we just extract each individual test case, and put all test case in one
+set, we lost the folder struture of test cases. which can be used to indicate the coupling between test cases - i.e. test cases in the same folder may cover similar feature
+
+secondly, in practice, artifacts are created and stored in commerical or open source tools. The format of each artifacts various differently from different tools. Many companies also use different tools to manager different artifacts, for example, have test cases in HP Qualtiy Center - Test managemnt tool, source code in Perforce - source code revision control system etc.
+Our framework provide an abstraction layer for various tools used in software development shops. 
+
+in our framework, a Factory pattern is used to extract artifacts from tools/repositories. For example ,if test case, requirement and defect are all store in HP QC, then a QCFactory can be implmented to extract test cases, requirement and defects. And this factory can be reused
+for any other companies use the same tool. 
+
+
+e.g. test case 
+maybe each artificat is an interface?
